@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oxitec</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sign-in-form">
+                <div class="text-center">
+                    <img data-tenant-branding-logo="true" class="logo" alt="Company Logo" src="images/logo.png"/>
+                    <img data-tenant-branding-background="true" class="bg-image" src="images/bg-image.png"/>
+                </div>
+                <div id="api">
+                    <h2 class="text-main-color title">
+                        Sign in
+                    </h2>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <div class="forgot-password">
+                            <a class="text-link" href="">Forgot password</a>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-blue" type="submit">Sign in</button>
+                    </div>
+                    <div class="text-center form-footer">
+                        <span class="text-hint">New to Oxitec?</span>
+                        <a id="createAccount" class="text-link" href="">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input');
+
+            inputs.forEach(input => input.addEventListener('input', updateValue))
+
+            function updateValue(event) {
+                const parent = event.target.parentElement;
+                parent.classList.add('filled');
+                if(event.target.value === '') {
+                    parent.classList.remove('filled');
+                }
+            }
+        });
+
+    </script>
+</html>
