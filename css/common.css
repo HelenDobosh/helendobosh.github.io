@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'FilsonSoftW03';
+  src: url('fonts/FilsonSoftW03-Regular.eot');
+  src: url('fonts/FilsonSoftW03-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/FilsonSoftW03-Regular.woff2') format('woff2'),
+  url('fonts/FilsonSoftW03-Regular.woff') format('woff'),
+  url('fonts/FilsonSoftW03-Regular.svg#FilsonSoftW03-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 0.004em;
+  margin: 0;
+  font-family: 'FilsonSoftW03', sans-serif;
+}
+
+:root {
+  --oxitec-dark: #2E5072;
+  --oxitec-main: #365072;
+  --oxitec-main-opacity: rgba(54, 90, 114, 0.5);
+  --oxitec-white: #ffffff;
+}
+
+body,
+html,
+.panel {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  padding: 15px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  padding: 0
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0
+}
+
+a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: var(--oxitec-dark)
+}
+
+a:focus {
+  outline: 0
+}
+
+input,
+select {
+  height: 56px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #D5D8E0;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--oxitec-main);
+}
+
+input::placeholder,
+select::placeholder {
+  font-weight: normal;
+  overflow: visible;
+  color: var(--oxitec-main-opacity);
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+input:hover,
+select:hover {
+  border: 1px solid #365072
+}
+
+input:focus,
+select:focus {
+  border-radius: 8px;
+  border: 2px solid #365072
+}
+
+button {
+  cursor: pointer;
+}
+
+.buttons button:not(#cancel):not(#email_ver_but_resend) {
+  height: 56px;
+  width: 100%;
+  left: 0;
+  top: 186px;
+  border-radius: 6px;
+  padding: 18px 25px;
+  background-color: var(--oxitec-dark);
+  color: var(--oxitec-white);
+  border: none;
+  margin-top: 24px;
+}
+
+.buttons button[aria-disabled=true] {
+  opacity: .3
+}
+
+.buttons button:not([aria-disabled=true]) {
+  opacity: 1
+}
+
+
+.buttons #cancel, .buttons #email_ver_but_resend {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--oxitec-main);
+}
+
+.buttons #email_ver_but_resend {
+  margin: 12px 0 24px;
+  text-decoration: underline;
+}
+
+.buttons #cancel {
+  position: absolute;
+  top: 46px;
+  left: 60px;
+}
+
+.buttons #cancel:before {
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  transform: rotate(-135deg);
+  margin-right: 5px;
+}
+
+img[data-tenant-branding-background=true] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  overflow: hidden;
+  top: 0
+}
+
+div[data-tenant-branding-background-color=true] {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1
+}
+
+.bg-image {
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.logo {
+  height: 39px;
+  width: 88px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container .panel-default {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .panel-default .panel-body {
+  width: 452px;
+  margin: 0 auto;
+  box-shadow: 0 50px 75px rgba(201, 201, 211, 0.25);
+  border-radius: 24px;
+  background-color: white;
+  padding: 40px 56px;
+  position: relative;
+}
+
+.panel-default .panel-body .attrEntry input {
+  margin-top: 24px;
+}
+
+.panel-default .panel-body .verificationInfoText {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--oxitec-dark);
+}
+
+#attributeList ul li .attrEntry.validate input.invalid,
+#attributeList ul li .attrEntry.validate input:invalid {
+  border: 1px solid #b00
+}
+
+#attributeList ul li .helpLink {
+  display: none
+}

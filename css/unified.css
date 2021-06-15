@@ -1,0 +1,81 @@
+
+.unified_container .panel-default .panel-body h3 {
+  font-size: 1.5em;
+  display: none
+}
+
+.unified_container .panel-default #api .intro h2 {
+  font-size: 32px;
+  margin: 32px 0 24px;
+  line-height: 41px;
+  font-weight: normal;
+  color: var(--oxitec-dark);
+}
+
+.unified_container .panel-default #api .divider {
+  display: none
+}
+
+.unified_container .panel-default #api .localAccount {
+  position: relative;
+  width: 100%
+}
+
+.unified_container .panel-default #api .localAccount .error {
+  color: #b00;
+  text-align: left
+}
+
+.unified_container .panel-default #api .localAccount .entry .entry-item {
+  position: relative;
+  margin-top: 24px;
+}
+
+.unified_container .panel-default #api .entry .entry-item label,
+.unified_container .panel-default #api .entry .attrEntry label {
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0 5px;
+  transition: all 0.3s linear;
+}
+
+.unified_container .panel-default #api .entry .entry-item.filled label,
+.unified_container .panel-default #api .entry .attrEntry.filled label {
+  opacity: 1;
+  top: -6px;
+  left: 7px;
+}
+
+.forgot-password.center-height {
+  margin-top: 6px;
+}
+
+.forgot-password > a {
+  color: var(--oxitec-dark);
+  text-decoration: underline;
+}
+
+.working {
+  display: none
+}
+
+.unified_container .panel-default #api .localAccount .create p {
+  margin-top: 24px;
+  text-align: center;
+  color: rgba(54, 90, 114, 0.5);
+  font-size: 14px;
+}
+
+.unified_container .panel-default #api .localAccount .create #createAccount {
+  color: #365072;
+  text-decoration: underline;
+}
+
+.unified_container .panel-default .claims-provider-list-buttons.social {
+  display: none;
+}
