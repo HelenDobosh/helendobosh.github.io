@@ -19,9 +19,13 @@
 
 :root {
   --oxitec-dark: #2E5072;
-  --oxitec-main: #365072;
-  --oxitec-main-opacity: rgba(54, 90, 114, 0.5);
+  --oxitec-dark-hover: #405E87;
+  --oxitec-dark-focus: #314968;
+  --oxitec-disabled: #9AA7B8;
+  --oxitec-primary: #365072;
+  --oxitec-primary-opacity: rgba(54, 90, 114, 0.5);
   --oxitec-white: #ffffff;
+  --oxitec-error: #E72626;
 }
 
 body,
@@ -75,14 +79,14 @@ select {
   padding: 0 15px;
   font-size: 16px;
   line-height: 21px;
-  color: var(--oxitec-main);
+  color: var(--oxitec-primary);
 }
 
 input::placeholder,
 select::placeholder {
   font-weight: normal;
   overflow: visible;
-  color: var(--oxitec-main-opacity);
+  color: var(--oxitec-primary-opacity);
 }
 
 input:focus-visible,
@@ -92,20 +96,38 @@ select:focus-visible {
 
 input:hover,
 select:hover {
-  border: 1px solid #365072
+  border: 1px solid #365072;
 }
 
 input:focus,
 select:focus {
   border-radius: 8px;
-  border: 2px solid #365072
+  border: 2px solid #365072;
+}
+
+.error {
+  color: var(--oxitec-error);
+}
+
+.error p {
+  font-size: 12px;
+}
+
+.error.itemLevel {
+  color: var(--oxitec-error);
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+input.highlightError  {
+  border: 1px solid var(--oxitec-error)
 }
 
 button {
   cursor: pointer;
 }
 
-.buttons button:not(#cancel):not(#email_ver_but_resend) {
+.buttons button {
   height: 56px;
   width: 100%;
   left: 0;
@@ -118,8 +140,16 @@ button {
   margin-top: 24px;
 }
 
+.buttons button:hover {
+  background-color: var(--oxitec-dark-hover);
+}
+
+.buttons button:focus {
+  background-color: var(--oxitec-dark-focus);
+}
+
 .buttons button[aria-disabled=true] {
-  opacity: .3
+  background-color: var(--oxitec-disabled);
 }
 
 .buttons button:not([aria-disabled=true]) {
@@ -132,8 +162,11 @@ button {
   line-height: 18px;
   padding: 0;
   background: transparent;
+  width: auto;
+  height: auto;
+  margin: 0;
   border: none;
-  color: var(--oxitec-main);
+  color: var(--oxitec-primary);
 }
 
 .buttons #email_ver_but_resend {
@@ -211,8 +244,13 @@ div[data-tenant-branding-background-color=true] {
   position: relative;
 }
 
-.panel-default .panel-body .attrEntry input {
+.panel-default .panel-body .attrEntry {
+  position: relative;
   margin-top: 24px;
+}
+
+.panel-default .panel-body .TextBox .attrEntry> div:first-child {
+  margin-bottom: 24px;
 }
 
 .panel-default .panel-body .verificationInfoText {
@@ -223,7 +261,7 @@ div[data-tenant-branding-background-color=true] {
 
 #attributeList ul li .attrEntry.validate input.invalid,
 #attributeList ul li .attrEntry.validate input:invalid {
-  border: 1px solid #b00
+  border: 1px solid var(--oxitec-error)
 }
 
 #attributeList ul li .helpLink {

@@ -21,11 +21,6 @@
   width: 100%
 }
 
-.unified_container .panel-default #api .localAccount .error {
-  color: #b00;
-  text-align: left
-}
-
 .unified_container .panel-default #api .localAccount .entry .entry-item {
   position: relative;
   margin-top: 24px;
@@ -69,6 +64,11 @@
   text-align: center;
   color: rgba(54, 90, 114, 0.5);
   font-size: 14px;
+}
+
+.unified_container .panel-default .entry-item > .error {
+  position: absolute;
+  bottom: -18px;
 }
 
 .unified_container .panel-default #api .localAccount .create #createAccount {
