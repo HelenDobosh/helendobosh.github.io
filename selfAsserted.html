@@ -15,41 +15,46 @@
   </head>
 
   <body>
-    <div class="bg-image-wrapper" data-tenant-branding-background-color="true">
-      <img data-tenant-branding-background="true" class="bg-image"
-           src="https://helendobosh.github.io/oxitec-signin/images/bg-image.png" alt="bg-image"/>
-    </div>
-    <div class="bg-image-wrapper-mobile" data-tenant-branding-background-color="true">
-      <img data-tenant-branding-background="true" class="bg-image"
-           src="https://helendobosh.github.io/oxitec-signin/images/bg-image-mobile.png" alt="bg-image"/>
-    </div>
-    <div class="container unified_container">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="branding-head">
-            <img data-tenant-branding-logo="true" class="logo" alt="Company Logo"
-                 src="https://helendobosh.github.io/oxitec-signin/images/logo.png"/>
+  <div class="bg-image-wrapper" data-tenant-branding-background-color="true">
+    <img data-tenant-branding-background="true" class="bg-image"
+         src="https://helendobosh.github.io/oxitec-signin/images/bg-image.png" alt="bg-image"/>
+  </div>
+  <div class="bg-image-wrapper-mobile" data-tenant-branding-background-color="true">
+    <img data-tenant-branding-background="true" class="bg-image"
+         src="https://helendobosh.github.io/oxitec-signin/images/bg-image-mobile.png" alt="bg-image"/>
+  </div>
+  <div class="container  unified_container ">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="branding-head">
+          <img data-tenant-branding-logo="true" class="logo" alt="Company Logo"
+               src="https://helendobosh.github.io/oxitec-signin/images/logo.png"/>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div id="api">
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
   </body>
 
-<!--<script>-->
-<!--  document.addEventListener('DOMContentLoaded', function() {-->
-<!--    const inputs = document.querySelectorAll('input');-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('input');
 
-<!--    inputs.forEach(input => input.addEventListener('input', updateValue))-->
+    inputs.forEach(input => input.addEventListener('input', updateValue))
 
-<!--    function updateValue(event) {-->
-<!--      const parent = event.target.parentElement;-->
-<!--      parent.classList.add('filled');-->
-<!--      if(event.target.value === '') {-->
-<!--        parent.classList.remove('filled');-->
-<!--      }-->
-<!--    }-->
-<!--  });-->
+    function updateValue(event) {
+      const parent = event.target.parentElement;
+      parent.classList.add('filled');
+      if(event.target.value === '') {
+        parent.classList.remove('filled');
+      }
+    }
+  });
 
-<!--</script>-->
+</script>
 </html>
