@@ -46,8 +46,8 @@
   left: 7px;
 }
 
-.forgot-password.center-height {
-  margin-top: 6px;
+.forgot-password {
+  margin-top: 24px;
 }
 
 .forgot-password > a {
@@ -74,9 +74,15 @@
 .unified_container .panel-default #api .localAccount .create #createAccount {
   color: #365072;
   text-decoration: underline;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .unified_container .panel-default .claims-provider-list-buttons.social {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .forgot-password {
+    margin-top: 6px;
+  }
 }
