@@ -275,6 +275,27 @@ div[data-tenant-branding-background-color=true] {
   display: none
 }
 
+.panel-default #api .entry .entry-item label,
+.panel-default #api .entry .attrEntry label {
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0 5px;
+  transition: all 0.3s linear;
+}
+
+.panel-default #api .entry .entry-item.filled label,
+.panel-default #api .entry .attrEntry.filled label {
+  opacity: 1;
+  top: -6px;
+  left: 7px;
+}
+
+
 @media only screen and (min-width: 768px) {
   .container .panel-default .panel-body {
     padding: 40px 56px;
