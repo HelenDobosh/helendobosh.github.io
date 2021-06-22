@@ -89,12 +89,12 @@ select {
   background-position-x: 95%;
   background-position-y: 50%;
   padding-right: 35px;
-  background-image: url(../images/chevron.png);
+  background-image: url(https://helendobosh.github.io/oxitec-signin/images/chevron.png);
   background-size: 11px;
 }
 
 select:focus, select:hover {
-  background-image: url(../images/chevron-focused.png);
+  background-image: url(https://helendobosh.github.io/oxitec-signin/images/chevron-focused.png);
 }
 
 input::placeholder,
@@ -291,7 +291,7 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default #api .entry .entry-item label,
-.panel-default #api .entry .attrEntry label {
+.panel-default #api .attrEntry label {
   opacity: 0;
   position: absolute;
   top: 4px;
@@ -304,7 +304,7 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default #api .entry .entry-item.filled label,
-.panel-default #api .entry .attrEntry.filled label {
+.panel-default #api .attrEntry.filled label {
   opacity: 1;
   top: -6px;
   left: 7px;
