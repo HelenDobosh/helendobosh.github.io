@@ -286,12 +286,17 @@ div[data-tenant-branding-background-color=true] {
   border: 1px solid var(--oxitec-error)
 }
 
+.panel-default .entry .entry-item.validate label,
+.panel-default .attrEntry.validate label {
+  color: var(--oxitec-error);
+}
+
 #attributeList ul li .helpLink {
   display: none
 }
 
-.panel-default #api .entry .entry-item label,
-.panel-default #api .attrEntry label {
+.panel-default .entry .entry-item label,
+.panel-default .attrEntry label {
   opacity: 0;
   position: absolute;
   top: 4px;
@@ -303,8 +308,17 @@ div[data-tenant-branding-background-color=true] {
   transition: all 0.3s linear;
 }
 
-.panel-default #api .entry .entry-item.filled label,
-.panel-default #api .attrEntry.filled label {
+.panel-default .DropdownSingleSelect .attrEntry label {
+  opacity: 1;
+  z-index: 1;
+}
+
+.panel-default .attrEntry div ~ label {
+
+}
+
+.panel-default .entry .entry-item.filled label,
+.panel-default .attrEntry.filled label {
   opacity: 1;
   top: -6px;
   left: 7px;
