@@ -311,10 +311,11 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .DropdownSingleSelect .attrEntry label {
   opacity: 1;
   z-index: 1;
+  top: -6px;
 }
 
 .panel-default .attrEntry div ~ label {
-
+  top: 49px;
 }
 
 .panel-default .entry .entry-item.filled label,
@@ -322,6 +323,10 @@ div[data-tenant-branding-background-color=true] {
   opacity: 1;
   top: -6px;
   left: 7px;
+}
+
+.panel-default .attrEntry.filled div ~ label {
+  top: 39px;
 }
 
 
