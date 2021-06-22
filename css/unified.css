@@ -26,8 +26,9 @@
   margin-top: 24px;
 }
 
-.forgot-password {
-  margin-top: 24px;
+.unified_container .panel-default #api .localAccount .entry .entry-item:last-child {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .forgot-password > a {
@@ -61,8 +62,12 @@
   display: none;
 }
 
+.password-label {
+  margin-top: 24px;
+}
+
 @media only screen and (min-width: 768px) {
-  .forgot-password {
-    margin-top: 6px;
+  .password-label {
+    margin-top: 8px;
   }
 }
