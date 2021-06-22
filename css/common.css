@@ -82,6 +82,21 @@ input, select {
   color: var(--oxitec-primary);
 }
 
+select {
+  appearance: none;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-right: 35px;
+  background-image: url(../images/chevron.png);
+  background-size: 11px;
+}
+
+select:focus, select:hover {
+  background-image: url(../images/chevron-focused.png);
+}
+
 input::placeholder,
 select::placeholder {
   font-weight: normal;
