@@ -47,11 +47,6 @@
   font-size: 14px;
 }
 
-.unified_container .panel-default .entry-item > .error {
-  position: absolute;
-  top: 50px;
-}
-
 .unified_container .panel-default #api .localAccount .create #createAccount {
   color: #365072;
   text-decoration: underline;
@@ -62,16 +57,25 @@
   display: none;
 }
 
+.unified_container .panel-default .entry-item .password-label ~ .error {
+  position: absolute;
+  top: -20px;
+}
+
 .password-label {
   margin-top: 24px;
+}
+
+.unified_container .panel-default .entry-item .password-label .label {
+  bottom: 77px;
+}
+
+.unified_container  .panel-default .entry .entry-item.filled .password-label label {
+  bottom: 87px;
 }
 
 @media only screen and (min-width: 768px) {
   .password-label {
     margin-top: 16px;
-  }
-
-  .unified_container .panel-default .entry-item > .error {
-    top: 58px;
   }
 }
