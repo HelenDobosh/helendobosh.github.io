@@ -279,6 +279,7 @@ div[data-tenant-branding-background-color=true] {
   font-size: 14px;
   line-height: 18px;
   color: var(--oxitec-dark);
+  min-height: 39px;
 }
 
 #attributeList ul li .attrEntry.validate input.invalid,
@@ -315,8 +316,11 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .attrEntry div ~ label {
-  bottom: 121px;
-  top: auto;
+  top: 51px;
+}
+
+.panel-default .attrEntry.resend div ~ label {
+  top: 4px;
 }
 
 .panel-default .entry .entry-item.filled label,
@@ -327,7 +331,11 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .attrEntry.filled div ~ label {
-  bottom: 131px;
+  top: 61px;
+}
+
+.panel-default .attrEntry.resend.filled div ~ label {
+  top: -6px;
 }
 
 
