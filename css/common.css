@@ -299,7 +299,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .attrEntry label {
   opacity: 0;
   position: absolute;
-  bottom: 41px;
+  top: 4px;
   left: 12px;
   background-color: #fff;
   font-size: 12px;
@@ -316,12 +316,13 @@ div[data-tenant-branding-background-color=true] {
 
 .panel-default .attrEntry div ~ label {
   bottom: 121px;
+  top: auto;
 }
 
 .panel-default .entry .entry-item.filled label,
 .panel-default .attrEntry.filled label {
   opacity: 1;
-  bottom: 51px;
+  top: -6px;
   left: 7px;
 }
 
