@@ -273,7 +273,6 @@ div[data-tenant-branding-background-color=true] {
 
 .panel-default .panel-body .TextBox .attrEntry> div:first-child {
   margin-bottom: 24px;
-  min-height: 39px;
 }
 
 .panel-default .panel-body .verificationInfoText {
@@ -316,11 +315,7 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .attrEntry div ~ label {
-  top: 51px;
-}
-
-.panel-default .attrEntry.resend div ~ label {
-  top: 4px;
+  display: none;
 }
 
 .panel-default .entry .entry-item.filled label,
@@ -329,15 +324,6 @@ div[data-tenant-branding-background-color=true] {
   top: -6px;
   left: 7px;
 }
-
-.panel-default .attrEntry.filled div ~ label {
-  top: 41px;
-}
-
-.panel-default .attrEntry.resend.filled div ~ label {
-  top: -6px;
-}
-
 
 @media only screen and (min-width: 768px) {
   .container .panel-default .panel-body {

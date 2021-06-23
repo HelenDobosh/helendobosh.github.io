@@ -49,7 +49,7 @@
 
 .unified_container .panel-default .entry-item > .error {
   position: absolute;
-  bottom: -18px;
+  top: 50px;
 }
 
 .unified_container .panel-default #api .localAccount .create #createAccount {
@@ -68,6 +68,10 @@
 
 @media only screen and (min-width: 768px) {
   .password-label {
-    margin-top: 8px;
+    margin-top: 16px;
+  }
+
+  .unified_container .panel-default .entry-item > .error {
+    top: 58px;
   }
 }

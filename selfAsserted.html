@@ -36,15 +36,5 @@
     </div>
   </div>
   <script src="https://helendobosh.github.io/oxitec-signin/scripts.js"></script>
-  <script>
-    const but_resend = document.querySelector('#email_ver_but_resend');
-    but_resend.addEventListener('click', (event) => {
-        const parent = event.target.parentElement;
-        parent.classList.add('resend');
-        if(event.target.value === '') {
-          parent.classList.remove('filled');
-      }
-    })
-  </script>
   </body>
 </html>
