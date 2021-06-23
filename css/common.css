@@ -315,7 +315,7 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .attrEntry div ~ label {
-  top: 49px;
+  bottom: 121px;
 }
 
 .panel-default .entry .entry-item.filled label,
@@ -326,7 +326,7 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .attrEntry.filled div ~ label {
-  top: 39px;
+  bottom: 131px;
 }
 
 
