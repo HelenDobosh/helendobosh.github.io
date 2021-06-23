@@ -10,8 +10,9 @@
   bottom: 158px;
 }
 
-.self_asserted_container .panel-default .attrEntry.filled div #email_ver_input_label {
+.self_asserted_container .panel-default .attrEntry div.filled #email_ver_input_label {
   bottom: 168px;
+  opacity: 1;
 }
 
 .self_asserted_container  .buttons.verify input {
@@ -19,11 +20,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .self_asserted_container .panel-default .attrEntry div #email_ver_input_label {
+  .self_asserted_container .panel-default .attrEntry div #email_ver_input_label  {
     bottom: 174px;
   }
 
-  .self_asserted_container .panel-default .attrEntry.filled div #email_ver_input_label {
+  .self_asserted_container .panel-default .attrEntry div.filled #email_ver_input_label  {
     bottom: 184px;
   }
 }

@@ -320,7 +320,6 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .entry .entry-item.filled > label,
-.panel-default .entry .entry-item .buttons.verify.filled > label,
 .panel-default .attrEntry.filled > label{
   opacity: 1;
   bottom: 41px;
