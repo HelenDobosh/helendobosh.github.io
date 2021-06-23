@@ -297,7 +297,7 @@ div[data-tenant-branding-background-color=true] {
 
 .panel-default .entry .entry-item label,
 .panel-default .attrEntry label,
-.panel-default .entry .entry-item .buttons.verify.filled > label {
+.panel-default .entry .entry-item .buttons.verify > label {
   opacity: 0;
   position: absolute;
   bottom: 31px;
