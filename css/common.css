@@ -273,13 +273,13 @@ div[data-tenant-branding-background-color=true] {
 
 .panel-default .panel-body .TextBox .attrEntry> div:first-child {
   margin-bottom: 24px;
+  min-height: 39px;
 }
 
 .panel-default .panel-body .verificationInfoText {
   font-size: 14px;
   line-height: 18px;
   color: var(--oxitec-dark);
-  min-height: 39px;
 }
 
 #attributeList ul li .attrEntry.validate input.invalid,
@@ -331,7 +331,7 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .attrEntry.filled div ~ label {
-  top: 61px;
+  top: 41px;
 }
 
 .panel-default .attrEntry.resend.filled div ~ label {
