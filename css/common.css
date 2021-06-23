@@ -296,7 +296,8 @@ div[data-tenant-branding-background-color=true] {
 }
 
 .panel-default .entry .entry-item label,
-.panel-default .attrEntry label {
+.panel-default .attrEntry label,
+.panel-default .entry .entry-item .buttons.verify.filled > label {
   opacity: 0;
   position: absolute;
   bottom: 31px;
@@ -318,8 +319,9 @@ div[data-tenant-branding-background-color=true] {
   display: none;
 }
 
-.panel-default .entry .entry-item.filled label,
-.panel-default .attrEntry.filled label {
+.panel-default .entry .entry-item.filled > label,
+.panel-default .entry .entry-item .buttons.verify.filled > label,
+.panel-default .attrEntry.filled > label{
   opacity: 1;
   bottom: 41px;
   left: 7px;
@@ -350,8 +352,8 @@ div[data-tenant-branding-background-color=true] {
     display: none;
   }
 
-  .panel-default .entry .entry-item.filled label,
-  .panel-default .attrEntry.filled label {
+  .panel-default .entry .entry-item.filled > label,
+  .panel-default .attrEntry.filled > label {
     bottom: 41px;
   }
 

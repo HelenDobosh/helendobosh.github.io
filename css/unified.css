@@ -66,11 +66,11 @@
   margin-top: 24px;
 }
 
-.unified_container .panel-default .entry-item .password-label .label {
+.unified_container .panel-default .entry-item .password-label label {
   bottom: 77px;
 }
 
-.unified_container  .panel-default .entry .entry-item.filled .password-label label {
+.unified_container .panel-default .entry .entry-item.filled .password-label label {
   bottom: 87px;
 }
 
