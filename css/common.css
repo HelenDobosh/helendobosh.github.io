@@ -80,6 +80,7 @@ input, select {
   font-size: 16px;
   line-height: 21px;
   color: var(--oxitec-primary);
+  background-color: transparent;
 }
 
 select {
