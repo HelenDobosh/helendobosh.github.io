@@ -299,7 +299,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .attrEntry label {
   opacity: 0;
   position: absolute;
-  bottom: 41px;
+  bottom: 31px;
   left: 12px;
   background-color: #fff;
   font-size: 12px;
@@ -321,7 +321,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .entry .entry-item.filled label,
 .panel-default .attrEntry.filled label {
   opacity: 1;
-  bottom: 51px;
+  bottom: 41px;
   left: 7px;
 }
 
@@ -348,5 +348,15 @@ div[data-tenant-branding-background-color=true] {
 
   .bg-image-wrapper-mobile {
     display: none;
+  }
+
+  .panel-default .entry .entry-item.filled label,
+  .panel-default .attrEntry.filled label {
+    bottom: 41px;
+  }
+
+  .panel-default .entry .entry-item label,
+  .panel-default .attrEntry label {
+    bottom: 51px;
   }
 }
