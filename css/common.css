@@ -131,7 +131,7 @@ select:focus {
 .error.itemLevel {
   color: var(--oxitec-error);
   font-size: 12px;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 }
 
 input.highlightError  {
@@ -299,7 +299,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .attrEntry label {
   opacity: 0;
   position: absolute;
-  top: 4px;
+  bottom: 41px;
   left: 12px;
   background-color: #fff;
   font-size: 12px;
@@ -321,7 +321,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .entry .entry-item.filled label,
 .panel-default .attrEntry.filled label {
   opacity: 1;
-  top: -6px;
+  bottom: 51px;
   left: 7px;
 }
 
