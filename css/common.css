@@ -190,8 +190,8 @@ button {
 
 .buttons #cancel {
   position: absolute;
-  top: 46px;
-  left: 60px;
+  top: 43px;
+  left: 30px;
 }
 
 .buttons #cancel:before {
@@ -333,6 +333,11 @@ div[data-tenant-branding-background-color=true] {
 
   .buttons button {
     height: 56px;
+  }
+
+  .buttons #cancel {
+    top: 46px;
+    left: 60px;
   }
 
   input, select {
