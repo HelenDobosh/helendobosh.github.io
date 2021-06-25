@@ -82,12 +82,14 @@ input, select {
   color: var(--oxitec-primary);
   background-color: transparent;
   outline: none;
-  box-shadow: none!important;
+  box-shadow: none;
   caret-color: var(--oxitec-primary);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 select {
-  appearance: none;
   position: relative;
   background-repeat: no-repeat;
   background-position-x: 95%;
