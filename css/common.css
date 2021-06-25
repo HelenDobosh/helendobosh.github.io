@@ -191,8 +191,11 @@ button {
   color: var(--oxitec-primary);
 }
 
+#email_ver_input {
+  margin-bottom: 30px;
+}
+
 .buttons #email_ver_but_resend {
-  margin: 12px 0 24px;
   text-decoration: underline;
   position: absolute;
   top: 70px;
