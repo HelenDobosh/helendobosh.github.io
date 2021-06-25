@@ -194,6 +194,12 @@ button {
 .buttons #email_ver_but_resend {
   margin: 12px 0 24px;
   text-decoration: underline;
+  position: absolute;
+  top: 70px;
+}
+
+.buttons.verify {
+  position: relative;
 }
 
 .buttons #cancel {
