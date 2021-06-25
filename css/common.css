@@ -331,7 +331,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .entry .entry-item.filled > label,
 .panel-default .attrEntry.filled > label{
   opacity: 1;
-  bottom: 46px;
+  bottom: 44px;
   left: 8px;
 }
 
@@ -341,7 +341,7 @@ div[data-tenant-branding-background-color=true] {
   }
 
   .buttons button {
-    height: 56px;
+    height: 54px;
   }
 
   .buttons #cancel {
