@@ -9,3 +9,13 @@ function updateValue(event) {
         parent.classList.remove('filled');
     }
 }
+
+const emailVerification = document.querySelector('#email_ver_input');
+const emailInput = emailVerification.parentElement.querySelector('#email')
+console.log(emailVerification.style.display, 1)
+if(emailVerification.style.display === "inline") {
+    emailInput.style.display = 'none';
+    console.log(emailVerification.style.display)
+} else {
+    emailInput.style.display = 'block';
+}
