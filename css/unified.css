@@ -67,11 +67,11 @@
 }
 
 .unified_container .panel-default .entry-item .password-label label {
-  bottom: 77px;
+  bottom: 82px;
 }
 
 .unified_container .panel-default .entry .entry-item.filled .password-label label {
-  bottom: 87px;
+  bottom: 92px;
 }
 
 @media only screen and (min-width: 768px) {

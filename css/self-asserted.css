@@ -7,12 +7,12 @@
 }
 
 .self_asserted_container .panel-default .attrEntry div #email_ver_input_label {
-  bottom: 158px;
+  bottom: 163px;
 }
 
 .self_asserted_container .panel-default .attrEntry div.filled #email_ver_input_label {
-  bottom: 168px;
-  left: 7px;
+  bottom: 173px;
+  left: 8px;
   opacity: 1;
 }
 
@@ -22,11 +22,11 @@
 
 @media only screen and (min-width: 768px) {
   .self_asserted_container .panel-default .attrEntry div #email_ver_input_label  {
-    bottom: 174px;
+    bottom: 179px;
   }
 
   .self_asserted_container .panel-default .attrEntry div.filled #email_ver_input_label  {
-    bottom: 184px;
+    bottom: 189px;
   }
 }
 

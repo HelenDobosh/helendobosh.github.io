@@ -309,12 +309,12 @@ div[data-tenant-branding-background-color=true] {
   opacity: 0;
   position: absolute;
   color: var(--oxitec-primary);
-  bottom: 31px;
+  bottom: 36px;
   left: 12px;
   background-color: #fff;
   font-size: 12px;
-  line-height: 12px;
-  padding: 0 5px;
+  line-height: 2px;
+  padding: 0 4px;
   transition: all 0.3s linear;
 }
 
@@ -331,8 +331,8 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .entry .entry-item.filled > label,
 .panel-default .attrEntry.filled > label{
   opacity: 1;
-  bottom: 41px;
-  left: 7px;
+  bottom: 46px;
+  left: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -367,11 +367,11 @@ div[data-tenant-branding-background-color=true] {
 
   .panel-default .entry .entry-item.filled > label,
   .panel-default .attrEntry.filled > label {
-    bottom: 51px;
+    bottom: 56px;
   }
 
   .panel-default .entry .entry-item label,
   .panel-default .attrEntry label {
-    bottom: 41px;
+    bottom: 46px;
   }
 }
