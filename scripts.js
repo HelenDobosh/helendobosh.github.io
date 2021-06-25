@@ -11,8 +11,9 @@ function updateValue(event) {
 }
 
 const emailVerification = document.querySelector('#email_ver_input');
-const emailInput = emailVerification.parentElement.querySelector('#email')
+const emailInput = emailVerification.parentElement.parentElement.querySelector('#email')
 console.log(emailVerification.style.display, 1)
+console.log(emailVerification.style.display === "inline")
 if(emailVerification.style.display === "inline") {
     emailInput.style.display = 'none';
     console.log(emailVerification.style.display)
