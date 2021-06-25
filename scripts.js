@@ -11,7 +11,7 @@ function updateValue(event) {
 }
 
 
-const emailVerificationBtn = document.querySelector("#email_ver_but_verify");
+const emailVerificationBtn = document.querySelector("#email_ver_but_send");
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
 console.log(emailVerificationInput.style.display, 1)
