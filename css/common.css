@@ -359,11 +359,11 @@ div[data-tenant-branding-background-color=true] {
 
   .panel-default .entry .entry-item.filled > label,
   .panel-default .attrEntry.filled > label {
-    bottom: 41px;
+    bottom: 51px;
   }
 
   .panel-default .entry .entry-item label,
   .panel-default .attrEntry label {
-    bottom: 51px;
+    bottom: 41px;
   }
 }
