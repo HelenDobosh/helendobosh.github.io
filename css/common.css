@@ -83,6 +83,7 @@ input, select {
   background-color: transparent;
   outline: none;
   box-shadow: none;
+  caret-color: var(--oxitec-primary);
 }
 
 select {
@@ -305,6 +306,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .entry .entry-item .buttons.verify > label {
   opacity: 0;
   position: absolute;
+  color: var(--oxitec-primary);
   bottom: 31px;
   left: 12px;
   background-color: #fff;
