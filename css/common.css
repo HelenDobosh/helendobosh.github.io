@@ -331,7 +331,7 @@ div[data-tenant-branding-background-color=true] {
 .panel-default .entry .entry-item.filled > label,
 .panel-default .attrEntry.filled > label{
   opacity: 1;
-  bottom: 44px;
+  bottom: 46px;
   left: 8px;
 }
 
@@ -341,7 +341,7 @@ div[data-tenant-branding-background-color=true] {
   }
 
   .buttons button {
-    height: 54px;
+    height: 56px;
   }
 
   .buttons #cancel {
@@ -367,11 +367,11 @@ div[data-tenant-branding-background-color=true] {
 
   .panel-default .entry .entry-item.filled > label,
   .panel-default .attrEntry.filled > label {
-    bottom: 56px;
+    bottom: 54px;
   }
 
   .panel-default .entry .entry-item label,
   .panel-default .attrEntry label {
-    bottom: 46px;
+    bottom: 44px;
   }
 }
