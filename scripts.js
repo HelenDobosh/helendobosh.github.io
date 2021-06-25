@@ -11,12 +11,10 @@ function updateValue(event) {
 }
 
 
-const emailVerificationBtn = document.querySelector("#email_ver_but_send");
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
-console.log(emailVerificationInput.style.display, 1)
-console.log(emailVerificationInput.style.display === "inline")
-emailVerificationBtn.addEventListener("click", () => {
+
+const observer = new MutationObserver(function() {
     if(emailVerificationInput.style.display === "inline") {
         emailInput.style.display = 'none';
         console.log(emailVerificationInput.style.display)
@@ -24,4 +22,6 @@ emailVerificationBtn.addEventListener("click", () => {
         console.log(emailVerificationInput.style.display)
         emailInput.style.display = 'block';
     }
-})
+});
+
+observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
