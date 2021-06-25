@@ -333,10 +333,6 @@ div[data-tenant-branding-background-color=true] {
   top: 0;
 }
 
-.panel-default .attrEntry div ~ label {
-  display: none;
-}
-
 .panel-default .entry .entry-item.filled > label,
 .panel-default .attrEntry.filled > label{
   opacity: 1;
