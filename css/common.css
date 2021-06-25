@@ -81,6 +81,7 @@ input, select {
   line-height: 21px;
   color: var(--oxitec-primary);
   background-color: transparent;
+  outline: none;
 }
 
 select {
@@ -105,6 +106,8 @@ select::placeholder {
   color: var(--oxitec-primary-opacity);
 }
 
+input:focus,
+select:focus,
 input:focus-visible,
 select:focus-visible {
   outline: none;
