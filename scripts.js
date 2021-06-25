@@ -10,13 +10,18 @@ function updateValue(event) {
     }
 }
 
-const emailVerification = document.querySelector('#email_ver_input');
-const emailInput = emailVerification.parentElement.parentElement.querySelector('#email')
-console.log(emailVerification.style.display, 1)
-console.log(emailVerification.style.display === "inline")
-if(emailVerification.style.display === "inline") {
-    emailInput.style.display = 'none';
-    console.log(emailVerification.style.display)
-} else {
-    emailInput.style.display = 'block';
-}
+
+const emailVerificationBtn = document.querySelector("#email_ver_but_verify");
+const emailVerificationInput = document.querySelector('#email_ver_input');
+const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
+console.log(emailVerificationInput.style.display, 1)
+console.log(emailVerificationInput.style.display === "inline")
+emailVerificationBtn.addEventListener("click", () => {
+    if(emailVerificationInput.style.display === "inline") {
+        emailInput.style.display = 'none';
+        console.log(emailVerificationInput.style.display)
+    } else {
+        console.log(emailVerificationInput.style.display)
+        emailInput.style.display = 'block';
+    }
+})
