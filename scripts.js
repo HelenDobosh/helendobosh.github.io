@@ -12,16 +12,21 @@ function updateValue(event) {
 
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
-const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
+const emailLabel = document.querySelector('#email_label');
 
-const observer = new MutationObserver(function() {
-    if(emailVerificationInput.style.display === "inline") {
-        emailInput.style.display = 'none';
-        console.log(emailVerificationInput.style.display)
-    } else {
-        console.log(emailVerificationInput.style.display)
-        emailInput.style.display = 'block';
-    }
-});
+if(emailVerificationInput) {
+    const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
+    const observer = new MutationObserver(function() {
+        if(emailVerificationInput.style.display === "inline") {
+            emailInput.style.display = 'none';
+            emailLabel.style.display = 'none';
+        } else {
+            console.log(emailVerificationInput.style.display)
+            emailInput.style.display = 'block';
+            emailLabel.style.display = 'block';
+        }
+    });
 
-observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
+    observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
+}
+
