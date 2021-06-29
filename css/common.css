@@ -41,7 +41,6 @@ body {
 
 .container {
   height: 100%;
-  padding: 15px 0;
 }
 
 .text-center {
@@ -267,6 +266,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 15px 0;
 }
 
 .container .panel-default .panel-body {
