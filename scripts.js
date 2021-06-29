@@ -13,7 +13,6 @@ function updateValue(event) {
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
-const emailVerButtonSend = document.querySelector('#email_ver_but_send');
 
 if(emailVerificationInput) {
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
@@ -28,7 +27,8 @@ if(emailVerificationInput) {
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
 }
 
-emailVerButtonSend.addEventListener('click', () => {
+document.querySelector('#email_ver_but_send').addEventListener('click', () => {
     emailLabel.style.display = 'none';
 })
+
 

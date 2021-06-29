@@ -198,7 +198,7 @@ button {
 .buttons #email_ver_but_resend {
   text-decoration: underline;
   position: absolute;
-  top: 70px;
+  top: 60px;
 }
 
 .buttons.verify {
@@ -296,6 +296,7 @@ div[data-tenant-branding-background-color=true] {
   font-size: 14px;
   line-height: 18px;
   color: var(--oxitec-dark);
+  opacity: 0.5;
 }
 
 #attributeList ul li .attrEntry.validate input.invalid,
@@ -400,4 +401,7 @@ div[data-tenant-branding-background-color=true] {
     bottom: 134px;
   }
 
+  .buttons #email_ver_but_resend {
+    top: 67px;
+  }
 }
