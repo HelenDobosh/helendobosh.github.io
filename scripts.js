@@ -13,20 +13,22 @@ function updateValue(event) {
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
+const emailVerButtonSend = document.querySelector('#email_ver_but_send');
 
 if(emailVerificationInput) {
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
     const observer = new MutationObserver(function() {
         if(emailVerificationInput.style.display === "inline") {
             emailInput.style.display = 'none';
-            emailLabel.style.display = 'none';
         } else {
-            console.log(emailVerificationInput.style.display)
             emailInput.style.display = 'block';
-            emailLabel.style.display = 'block';
         }
     });
 
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
 }
+
+emailVerButtonSend.addEventListener('click', () => {
+    emailLabel.style.display = 'none';
+})
 
