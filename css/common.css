@@ -130,6 +130,7 @@ select:focus {
 
 .error {
   color: var(--oxitec-error);
+  font-size: 14px;
 }
 
 .error p {
@@ -162,6 +163,10 @@ button {
   margin-top: 24px;
 }
 
+.buttons button[form="attributeVerification"] {
+  margin-top: 16px;
+}
+
 .buttons button:hover {
   background-color: var(--oxitec-dark-hover);
 }
@@ -177,7 +182,6 @@ button {
 .buttons button:not([aria-disabled=true]) {
   opacity: 1
 }
-
 
 .buttons #cancel, .buttons #email_ver_but_resend,
 .buttons #email_ver_but_edit {
