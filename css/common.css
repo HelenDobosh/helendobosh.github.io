@@ -204,6 +204,7 @@ button {
 
 .buttons #email_ver_but_edit {
   text-decoration: underline;
+  margin-top: 12px;
 }
 
 .buttons.verify {
