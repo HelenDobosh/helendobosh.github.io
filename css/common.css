@@ -179,7 +179,8 @@ button {
 }
 
 
-.buttons #cancel, .buttons #email_ver_but_resend {
+.buttons #cancel, .buttons #email_ver_but_resend,
+.buttons #email_ver_but_edit {
   font-size: 14px;
   line-height: 18px;
   padding: 0;
@@ -199,6 +200,10 @@ button {
   text-decoration: underline;
   position: absolute;
   top: 60px;
+}
+
+.buttons #email_ver_but_edit {
+  text-decoration: underline;
 }
 
 .buttons.verify {
