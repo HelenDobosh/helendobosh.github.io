@@ -15,6 +15,10 @@ const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
 
 if(emailVerificationInput) {
+    document.querySelector('#email_ver_but_send').addEventListener('click', () => {
+        emailLabel.style.display = 'none';
+    })
+
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
     const observer = new MutationObserver(function() {
         if(emailVerificationInput.style.display === "inline") {
@@ -26,9 +30,4 @@ if(emailVerificationInput) {
 
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
 }
-
-document.querySelector('#email_ver_but_send').addEventListener('click', () => {
-    emailLabel.style.display = 'none';
-})
-
 
