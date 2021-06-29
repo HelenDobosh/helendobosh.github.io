@@ -207,8 +207,8 @@ button {
   margin-top: 12px;
 }
 
-#simplemodal-container .simplemodal-data {
-  display: none;
+#simplemodal-container .simplemodal-data, .verifying_blurb {
+  display: none!important;
 }
 
 .buttons.verify {
