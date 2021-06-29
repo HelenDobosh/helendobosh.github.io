@@ -340,6 +340,16 @@ div[data-tenant-branding-background-color=true] {
   left: 8px;
 }
 
+.panel-default .entry .entry-item > label#email_label,
+.panel-default .attrEntry > label#email_label {
+  bottom: 108px;
+}
+
+.panel-default .entry .entry-item.filled > label#email_label,
+.panel-default .attrEntry.filled > label#email_label {
+  bottom: 118px;
+}
+
 @media only screen and (min-width: 768px) {
   .container .panel-default .panel-body {
     padding: 40px 56px;
@@ -379,4 +389,15 @@ div[data-tenant-branding-background-color=true] {
   .panel-default .attrEntry label {
     bottom: 44px;
   }
+
+  .panel-default .entry .entry-item > label#email_label,
+  .panel-default .attrEntry > label#email_label {
+    bottom: 124px;
+  }
+
+  .panel-default .entry .entry-item.filled > label#email_label,
+  .panel-default .attrEntry.filled > label#email_label {
+    bottom: 134px;
+  }
+
 }
