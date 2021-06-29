@@ -309,13 +309,18 @@ div[data-tenant-branding-background-color=true] {
   opacity: 0.5;
 }
 
+.panel-default .panel-body .verificationSuccessText {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 #attributeList ul li .attrEntry.validate input.invalid,
 #attributeList ul li .attrEntry.validate input:invalid {
   border: 1px solid var(--oxitec-error)
 }
 
-.panel-default .entry .entry-item.validate label,
-.panel-default .attrEntry.validate label {
+.panel-default .entry .entry-item.invalid label,
+.panel-default .attrEntry.invalid label {
   color: var(--oxitec-error);
 }
 
