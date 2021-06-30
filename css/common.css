@@ -156,7 +156,7 @@ button {
   left: 0;
   top: 186px;
   border-radius: 6px;
-  background-color: var(--oxitec-dark);
+  background-color: var(--oxitec-primary);
   color: var(--oxitec-white);
   border: none;
   margin-top: 24px;
@@ -293,12 +293,12 @@ button {
   font-size: 14px;
   line-height: 18px;
   color: var(--oxitec-dark);
-  opacity: 0.5;
 }
 
 .panel-default .panel-body .verificationSuccessText {
   font-size: 14px;
   line-height: 18px;
+  color: var(--oxitec-dark);
 }
 
 #attributeList ul li .attrEntry.validate input.invalid,
