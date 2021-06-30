@@ -227,7 +227,7 @@ button {
 
 .buttons #email_ver_but_edit {
   text-decoration: underline;
-  margin-top: 12px;
+  margin: 12px 0;
 }
 
 #simplemodal-container .simplemodal-data, .verifying_blurb {
@@ -380,12 +380,12 @@ button {
 
 .panel-default .entry .entry-item.disabled > label#email_label,
 .panel-default .attrEntry.disabled > label#email_label {
-  bottom: 67px;
+  bottom: 78px;
 }
 
 .panel-default .entry .entry-item.filled.disabled > label#email_label,
 .panel-default .attrEntry.filled.disabled > label#email_label {
-  bottom: 77px;
+  bottom: 88px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -444,11 +444,11 @@ button {
 
   .panel-default .entry .entry-item.disabled > label#email_label,
   .panel-default .attrEntry.disabled > label#email_label {
-    bottom: 75px;
+    bottom: 86px;
   }
 
   .panel-default .entry .entry-item.filled.disabled > label#email_label,
   .panel-default .attrEntry.filled.disabled > label#email_label {
-    bottom: 85px;
+    bottom: 96px;
   }
 }
