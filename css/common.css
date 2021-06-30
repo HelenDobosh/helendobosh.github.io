@@ -23,7 +23,7 @@
   --oxitec-dark-hover: #405E87;
   --oxitec-dark-focus: #314968;
   --oxitec-disabled: #9AA7B8;
-  --oxitec-disabled-light: rgba(54, 80, 114, 0.5);;
+  --oxitec-disabled-light: rgba(54, 80, 114, 0.5);
   --oxitec-primary: #365072;
   --oxitec-white: #ffffff;
   --oxitec-error: #E72626;
@@ -335,6 +335,11 @@ button {
   display: none
 }
 
+.panel-default .entry .entry-item.disabled label,
+.panel-default .attrEntry.disabled label {
+  color: var(--oxitec-disabled-light);
+}
+
 .panel-default .entry .entry-item label,
 .panel-default .attrEntry label,
 .panel-default .entry .entry-item .buttons.verify > label {
@@ -371,6 +376,16 @@ button {
 .panel-default .entry .entry-item.filled > label#email_label,
 .panel-default .attrEntry.filled > label#email_label {
   bottom: 118px;
+}
+
+.panel-default .entry .entry-item.disabled > label#email_label,
+.panel-default .attrEntry.disabled > label#email_label {
+  bottom: 67px;
+}
+
+.panel-default .entry .entry-item.filled.disabled > label#email_label,
+.panel-default .attrEntry.filled.disabled > label#email_label {
+  bottom: 77px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -425,5 +440,15 @@ button {
 
   .buttons #email_ver_but_resend {
     top: 67px;
+  }
+
+  .panel-default .entry .entry-item.disabled > label#email_label,
+  .panel-default .attrEntry.disabled > label#email_label {
+    bottom: 75px;
+  }
+
+  .panel-default .entry .entry-item.filled.disabled > label#email_label,
+  .panel-default .attrEntry.filled.disabled > label#email_label {
+    bottom: 85px;
   }
 }

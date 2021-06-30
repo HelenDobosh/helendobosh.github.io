@@ -30,7 +30,6 @@ function validateInput(input) {
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
-const textInput = document.querySelector(".textInput")
 
 if(emailVerificationInput) {
     document.querySelector('#email_ver_but_send').addEventListener('click', () => {
@@ -47,4 +46,13 @@ if(emailVerificationInput) {
     });
 
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
+}
+
+const emailInput = document.querySelector('#email');
+
+if(emailInput.hasAttribute('disabled')) {
+    emailLabel.style.display = 'block';
+    emailInput.parentElement.classList.add("disabled");
+} else {
+    emailInput.parentElement.classList.remove("disabled");
 }
