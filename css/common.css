@@ -111,8 +111,10 @@ select::placeholder {
 
 input:focus,
 select:focus,
+button:focus,
 input:focus-visible,
-select:focus-visible {
+select:focus-visible,
+button:focus-visible {
   outline: none;
 }
 
