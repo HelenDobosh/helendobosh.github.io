@@ -27,6 +27,7 @@
   --oxitec-primary-opacity: rgba(54, 90, 114, 0.5);
   --oxitec-white: #ffffff;
   --oxitec-error: #E72626;
+  --oxitec-border: #D5D8E0;
 }
 
 body,
@@ -75,7 +76,7 @@ input, select {
   height: 48px;
   width: 100%;
   border-radius: 8px;
-  border: 1px solid #D5D8E0;
+  border: 1px solid var(--oxitec-border);
   padding: 0 15px;
   font-size: 16px;
   line-height: 21px;
@@ -128,6 +129,19 @@ input:focus,
 select:focus {
   border-radius: 8px;
   border: 2px solid #365072;
+}
+
+input:disabled,
+select:disabled {
+  cursor: not-allowed;
+  color: var(--oxitec-primary-opacity);
+}
+
+input:disabled:hover,
+select:disabled:hover,
+input:disabled:focus,
+select:disabled:focus {
+  border: 1px solid var(--oxitec-border);
 }
 
 .error {
