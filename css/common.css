@@ -23,11 +23,12 @@
   --oxitec-dark-hover: #405E87;
   --oxitec-dark-focus: #314968;
   --oxitec-disabled: #9AA7B8;
+  --oxitec-disabled-light: rgba(54, 80, 114, 0.5);;
   --oxitec-primary: #365072;
-  --oxitec-primary-opacity: rgba(54, 90, 114, 0.5);
   --oxitec-white: #ffffff;
   --oxitec-error: #E72626;
   --oxitec-border: #D5D8E0;
+
 }
 
 body,
@@ -108,7 +109,7 @@ input::placeholder,
 select::placeholder {
   font-weight: normal;
   overflow: visible;
-  color: var(--oxitec-primary-opacity);
+  color: var(--oxitec-disabled-light);
 }
 
 input:focus,
@@ -122,19 +123,19 @@ button:focus-visible {
 
 input:hover,
 select:hover {
-  border: 1px solid #365072;
+  border: 1px solid var(--oxitec-primary);
 }
 
 input:focus,
 select:focus {
   border-radius: 8px;
-  border: 2px solid #365072;
+  border: 2px solid var(--oxitec-primary);
 }
 
 input:disabled,
 select:disabled {
   cursor: not-allowed;
-  color: var(--oxitec-primary-opacity);
+  color: var(--oxitec-disabled-light);
 }
 
 input:disabled:hover,
