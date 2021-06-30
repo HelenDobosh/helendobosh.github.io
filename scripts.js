@@ -16,7 +16,6 @@ function updateFilledStatus(event) {
 function validateInput(input) {
     const observer = new MutationObserver(function() {
         const parent = input.parentElement;
-        console.log(input)
         if(input.classList.contains("invalid")) {
             parent.classList.add("invalid")
         } else {
@@ -37,7 +36,7 @@ if(emailVerificationInput) {
     })
 
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
-    const observer = new MutationObserver(function() {
+    const observer = new MutationObserver(() => {
         if(emailVerificationInput.style.display === "inline") {
             emailInput.style.display = 'none';
         } else {
@@ -50,9 +49,11 @@ if(emailVerificationInput) {
 
 const emailInput = document.querySelector('#email');
 
-if(emailInput.hasAttribute('disabled')) {
-    emailLabel.style.display = 'block';
-    emailInput.parentElement.classList.add("disabled");
-} else {
-    emailInput.parentElement.classList.remove("disabled");
-}
+new MutationObserver(() => {
+    if(emailInput.hasAttribute('disabled')) {
+        emailLabel.style.display = 'block';
+        emailInput.parentElement.classList.add("disabled");
+    } else {
+        emailInput.parentElement.classList.remove("disabled");
+    }
+}).observe(emailInput, {attributes : true});
