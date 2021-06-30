@@ -15,6 +15,7 @@
   letter-spacing: 0.004em;
   margin: 0;
   font-family: 'FilsonSoftW03', sans-serif;
+  outline: none;
 }
 
 :root {
@@ -150,6 +151,8 @@ input.highlightError  {
 
 button {
   cursor: pointer;
+  outline: none;
+  box-shadow: none;
 }
 
 .buttons button {
