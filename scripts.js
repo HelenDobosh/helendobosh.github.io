@@ -1,6 +1,21 @@
 const inputs = document.querySelectorAll('input');
 
-inputs.forEach(input => input.addEventListener('input', updateFilledStatus))
+inputs.forEach(input => {
+    addLabel(input);
+    input.addEventListener('input', updateFilledStatus);
+})
+
+function addLabel(input) {
+
+    const parent = input.parentElement;
+    const label = parent.querySelector('label');
+
+    const inputWrapper = document.createElement("div");
+    inputWrapper.setAttribute("class", "with-label")
+    inputWrapper.appendChild(label);
+    inputWrapper.appendChild(input);
+    parent.appendChild(inputWrapper);
+}
 
 function updateFilledStatus(event) {
     validateInput(event.target);
@@ -49,13 +64,16 @@ if(emailVerificationInput) {
 
 const emailInput = document.querySelector('#email');
 
-new MutationObserver(() => {
-    if(emailInput.hasAttribute('disabled')) {
-        console.log('disabled')
-        emailLabel.style.display = 'block';
-        emailInput.parentElement.classList.add("disabled");
-    } else {
-        console.log('not disabled')
-        emailInput.parentElement.classList.remove("disabled");
-    }
-}).observe(emailInput, {attributes : true});
+if(emailInput) {
+    new MutationObserver(() => {
+        if(emailInput.hasAttribute('disabled')) {
+            console.log('disabled')
+            emailLabel.style.display = 'block';
+            emailInput.parentElement.classList.add("disabled");
+        } else {
+            console.log('not disabled')
+            emailInput.parentElement.classList.remove("disabled");
+        }
+    }).observe(emailInput, {attributes : true});
+}
+

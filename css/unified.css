@@ -66,16 +66,6 @@
   margin-top: 24px;
 }
 
-.unified_container .panel-default .entry-item .password-label label {
-  bottom: 81px;
-}
-
-.unified_container .panel-default .entry .entry-item.filled .password-label label {
-  bottom: 91px;
-  left: 8px;
-  opacity: 1;
-}
-
 @media only screen and (min-width: 768px) {
   .password-label {
     margin-top: 16px;
