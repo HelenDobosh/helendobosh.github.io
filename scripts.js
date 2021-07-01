@@ -14,7 +14,7 @@ function addLabel(input) {
     inputWrapper.setAttribute("class", "with-label")
     inputWrapper.appendChild(label);
     inputWrapper.appendChild(input);
-    parent.appendChild(inputWrapper);
+    parent.prepend(inputWrapper);
 }
 
 function updateFilledStatus(event) {
