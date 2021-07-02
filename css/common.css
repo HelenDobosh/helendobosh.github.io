@@ -345,8 +345,7 @@ button {
 }
 
 .panel-default .entry .entry-item label,
-.panel-default .attrEntry label,
-.panel-default .entry .entry-item .buttons.verify > label {
+.panel-default .attrEntry label {
   opacity: 0;
   color: var(--oxitec-primary);
   background-color: #fff;
