@@ -329,8 +329,8 @@ button {
   border: 1px solid var(--oxitec-error)
 }
 
-.panel-default .entry,
-.panel-default .attrEntry {
+.panel-default .entry .entry-item,
+.panel-default .attrEntry .entry-item {
   display: flex;
   flex-direction: column;
 }
