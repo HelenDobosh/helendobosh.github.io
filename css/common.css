@@ -348,7 +348,7 @@ button {
 .panel-default .attrEntry label,
 .panel-default .entry .entry-item .password-label > label {
   opacity: 0;
-  display: none;
+  display: block;
   color: var(--oxitec-primary);
   background-color: #fff;
   transition: all 0.2s linear;

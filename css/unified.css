@@ -52,27 +52,16 @@
   display: none;
 }
 
-.unified_container .panel-default .entry-item .password-label ~ .error {
-  position: absolute;
-  top: -20px;
-}
-
-.password-label {
-  margin-top: 24px;
-}
-
 .password-label #forgotPassword {
   position: absolute;
   bottom: 6px;
   left: 0;
 }
 
-.password-label + #password {
+.password-label ~ .error ~ #password {
   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  .password-label {
-    margin-top: 16px;
-  }
+
 }
