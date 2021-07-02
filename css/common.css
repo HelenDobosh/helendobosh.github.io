@@ -329,6 +329,12 @@ button {
   border: 1px solid var(--oxitec-error)
 }
 
+.panel-default .entry,
+.panel-default .attrEntry {
+  display: flex;
+  flex-direction: column;
+}
+
 .panel-default .entry .entry-item.invalid label,
 .panel-default .attrEntry.invalid label {
   color: var(--oxitec-error);
@@ -355,6 +361,7 @@ button {
   font-size: 14px;
   margin-bottom: 0;
   line-height: 1px;
+  order: 0;
 }
 
 .panel-default .DropdownSingleSelect .attrEntry label {
