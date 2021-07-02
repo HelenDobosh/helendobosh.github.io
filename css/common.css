@@ -159,7 +159,7 @@ select:disabled:focus {
 .error.itemLevel {
   color: var(--oxitec-error);
   font-size: 12px;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 input.highlightError  {
@@ -358,7 +358,6 @@ button {
 .panel-default .attrEntry label,
 .panel-default .entry .entry-item .password-label > label {
   opacity: 0;
-  display: block;
   color: var(--oxitec-primary);
   background-color: #fff;
   transition: all 0.2s linear;
