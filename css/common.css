@@ -353,8 +353,8 @@ button {
   background-color: #fff;
   transition: all 0.2s linear;
   font-size: 14px;
-  margin-bottom: 4px;
-  line-height: 18px;
+  margin-bottom: 0;
+  line-height: 1px;
 }
 
 .panel-default .DropdownSingleSelect .attrEntry label {
@@ -367,7 +367,8 @@ button {
 .panel-default .attrEntry.filled > label,
 .panel-default .entry .entry-item.filled .password-label > label {
   opacity: 1;
-  display: inline-block;
+  line-height: 18px;
+  margin-bottom: 4px;
 }
 
 @media only screen and (min-width: 768px) {
