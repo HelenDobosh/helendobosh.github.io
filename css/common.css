@@ -335,6 +335,16 @@ button {
   flex-direction: column;
 }
 
+.panel-default .entry .entry-item input,
+.panel-default .attrEntry .entry-item input {
+  order: 1
+}
+
+.panel-default .entry .entry-item .error,
+.panel-default .attrEntry .entry-item .error {
+  order: 2;
+}
+
 .panel-default .entry .entry-item.invalid label,
 .panel-default .attrEntry.invalid label {
   color: var(--oxitec-error);
@@ -342,12 +352,6 @@ button {
 
 #attributeList ul li .helpLink {
   display: none
-}
-
-.panel-default .entry .entry-item.disabled label,
-.panel-default .attrEntry.disabled label {
-  color: var(--oxitec-disabled-light);
-  cursor: not-allowed;
 }
 
 .panel-default .entry .entry-item label,
@@ -362,6 +366,12 @@ button {
   margin-bottom: 0;
   line-height: 1px;
   order: 0;
+}
+
+.panel-default .entry .entry-item.disabled label,
+.panel-default .attrEntry.disabled label {
+  color: var(--oxitec-disabled-light);
+  cursor: not-allowed;
 }
 
 .panel-default .DropdownSingleSelect .attrEntry label {
