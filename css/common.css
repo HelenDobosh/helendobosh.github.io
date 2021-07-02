@@ -345,7 +345,8 @@ button {
 }
 
 .panel-default .entry .entry-item label,
-.panel-default .attrEntry label {
+.panel-default .attrEntry label,
+.panel-default .entry .entry-item .password-label > label {
   opacity: 0;
   color: var(--oxitec-primary);
   background-color: #fff;
@@ -362,7 +363,8 @@ button {
 }
 
 .panel-default .entry .entry-item.filled > label,
-.panel-default .attrEntry.filled > label{
+.panel-default .attrEntry.filled > label,
+.panel-default .entry .entry-item.filled .password-label > label {
   opacity: 1;
 }
 
