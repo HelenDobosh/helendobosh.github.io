@@ -49,13 +49,16 @@ if(emailVerificationInput) {
 
 const emailInput = document.querySelector('#email');
 
-new MutationObserver(() => {
-    if(emailInput.hasAttribute('disabled')) {
-        console.log('disabled')
-        emailLabel.style.display = 'block';
-        emailInput.parentElement.classList.add("disabled");
-    } else {
-        console.log('not disabled')
-        emailInput.parentElement.classList.remove("disabled");
-    }
-}).observe(emailInput, {attributes : true});
+if(emailInput) {
+    new MutationObserver(() => {
+        if(emailInput.hasAttribute('disabled')) {
+            console.log('disabled')
+            emailLabel.style.display = 'block';
+            emailInput.parentElement.classList.add("disabled");
+        } else {
+            console.log('not disabled')
+            emailInput.parentElement.classList.remove("disabled");
+        }
+    }).observe(emailInput, {attributes : true});
+}
+

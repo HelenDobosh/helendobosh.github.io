@@ -348,10 +348,7 @@ button {
 .panel-default .attrEntry label,
 .panel-default .entry .entry-item .buttons.verify > label {
   opacity: 0;
-  position: absolute;
   color: var(--oxitec-primary);
-  bottom: 36px;
-  left: 12px;
   background-color: #fff;
   font-size: 12px;
   line-height: 3px;
@@ -368,28 +365,6 @@ button {
 .panel-default .entry .entry-item.filled > label,
 .panel-default .attrEntry.filled > label{
   opacity: 1;
-  bottom: 46px;
-  left: 8px;
-}
-
-.panel-default .entry .entry-item > label#email_label,
-.panel-default .attrEntry > label#email_label {
-  bottom: 108px;
-}
-
-.panel-default .entry .entry-item.filled > label#email_label,
-.panel-default .attrEntry.filled > label#email_label {
-  bottom: 118px;
-}
-
-.panel-default .entry .entry-item.disabled > label#email_label,
-.panel-default .attrEntry.disabled > label#email_label {
-  bottom: 78px;
-}
-
-.panel-default .entry .entry-item.filled.disabled > label#email_label,
-.panel-default .attrEntry.filled.disabled > label#email_label {
-  bottom: 88px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -422,37 +397,7 @@ button {
     display: none;
   }
 
-  .panel-default .entry .entry-item.filled > label,
-  .panel-default .attrEntry.filled > label {
-    bottom: 54px;
-  }
-
-  .panel-default .entry .entry-item label,
-  .panel-default .attrEntry label {
-    bottom: 44px;
-  }
-
-  .panel-default .entry .entry-item > label#email_label,
-  .panel-default .attrEntry > label#email_label {
-    bottom: 124px;
-  }
-
-  .panel-default .entry .entry-item.filled > label#email_label,
-  .panel-default .attrEntry.filled > label#email_label {
-    bottom: 134px;
-  }
-
   .buttons #email_ver_but_resend {
     top: 67px;
-  }
-
-  .panel-default .entry .entry-item.disabled > label#email_label,
-  .panel-default .attrEntry.disabled > label#email_label {
-    bottom: 86px;
-  }
-
-  .panel-default .entry .entry-item.filled.disabled > label#email_label,
-  .panel-default .attrEntry.filled.disabled > label#email_label {
-    bottom: 96px;
   }
 }
