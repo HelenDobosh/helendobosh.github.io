@@ -61,6 +61,12 @@
   margin-top: 24px;
 }
 
+.password-label #forgotPassword {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .password-label {
     margin-top: 16px;
