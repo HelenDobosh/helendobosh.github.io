@@ -306,11 +306,7 @@ button {
 
 .panel-default .panel-body .attrEntry {
   position: relative;
-  margin-top: 24px;
-}
-
-.panel-default .panel-body .TextBox .attrEntry> div:first-child {
-  margin-bottom: 24px;
+  margin-top: 8px;
 }
 
 .panel-default .panel-body .verificationInfoText {
