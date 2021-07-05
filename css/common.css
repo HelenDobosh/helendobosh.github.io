@@ -25,6 +25,7 @@
   --oxitec-disabled: #9AA7B8;
   --oxitec-disabled-light: rgba(54, 80, 114, 0.5);
   --oxitec-primary: #365072;
+  --oxitec-secondary: #A54F8B;
   --oxitec-white: #ffffff;
   --oxitec-error: #E72626;
   --oxitec-border: #D5D8E0;
@@ -63,10 +64,14 @@ p {
 }
 
 a {
-  text-decoration: underline;
   font-size: 14px;
   color: var(--oxitec-dark);
   padding: 5px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--oxitec-secondary);
 }
 
 a:focus {
