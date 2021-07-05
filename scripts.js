@@ -21,9 +21,9 @@ const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
 
 if(emailVerificationInput) {
-    document.querySelector('#email_ver_but_send').addEventListener('click', () => {
-        emailLabel.style.display = 'none';
-    })
+
+    hideEmailLabel('#email_ver_but_send');
+    hideEmailLabel('#email_ver_but_resend');
 
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
     const observer = new MutationObserver(() => {
@@ -37,16 +37,20 @@ if(emailVerificationInput) {
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
 }
 
+function hideEmailLabel(btnId) {
+    document.querySelector(btnId).addEventListener('click', () => {
+        emailLabel.style.display = 'none';
+    })
+}
+
 const emailInput = document.querySelector('#email');
 
 if(emailInput) {
     new MutationObserver(() => {
         if(emailInput.hasAttribute('disabled')) {
-            console.log('disabled')
             emailLabel.style.display = 'block';
             emailInput.parentElement.classList.add("disabled");
         } else {
-            console.log('not disabled')
             emailInput.parentElement.classList.remove("disabled");
         }
     }).observe(emailInput, {attributes : true});
