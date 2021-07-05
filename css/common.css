@@ -224,8 +224,11 @@ button {
 
 .buttons #email_ver_but_resend {
   text-decoration: underline;
-  position: absolute;
-  top: 60px;
+  order: 1;
+}
+
+.buttons #email_ver_but_verify {
+  order: 2;
 }
 
 .buttons #email_ver_but_edit {
@@ -240,6 +243,9 @@ button {
 .buttons.verify {
   position: relative;
   order: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .buttons #cancel {
@@ -410,9 +416,5 @@ button {
 
   .bg-image-wrapper-mobile {
     display: none;
-  }
-
-  .buttons #email_ver_but_resend {
-    top: 67px;
   }
 }
