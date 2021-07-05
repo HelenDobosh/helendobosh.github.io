@@ -17,11 +17,10 @@ function validateInput(input) {
 }
 
 const requiredFieldMissing = document.querySelector('#requiredFieldMissing');
-const continueBtn = document.querySelector('#continue');
 
-if(continueBtn) {
-    continueBtn.addEventListener('click', () => {
-        if(requiredFieldMissing && requiredFieldMissing.style.display === "block") {
+if(requiredFieldMissing) {
+    new MutationObserver(() => {
+        if(requiredFieldMissing.style.display === "block") {
             document.querySelectorAll(".itemLevel").forEach(item => {
                 if(item.classList.contains('show')) {
                     item.parentElement.classList.add('invalid');
@@ -29,8 +28,12 @@ if(continueBtn) {
                     item.parentElement.classList.remove('invalid');
                 }
             })
+        } else {
+            document.querySelectorAll(".itemLevel").forEach(item => {
+                item.parentElement.classList.remove('invalid');
+            });
         }
-    });
+    }).observe(requiredFieldMissing, {attributes : true});
 }
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
@@ -64,14 +67,14 @@ if(emailInput) {
     }).observe(emailInput, {attributes : true});
 }
 
-const emailVarBtn = document.querySelector('#email_ver_but_verify');
+const emailFailRetry = document.querySelector('#email_fail_retry');
 
-if(emailVarBtn) {
-    emailVarBtn.addEventListener('click', () => {
-        if(document.querySelector('#email_fail_retry').style.display === "inline") {
+if(emailFailRetry) {
+    new MutationObserver(() => {
+        if(emailFailRetry.style.display === "inline") {
             emailVerificationInput.classList.add("invalid")
         } else {
             emailVerificationInput.classList.remove("invalid")
         }
-    })
+    }).observe(emailFailRetry, {attributes : true});
 }
