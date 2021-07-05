@@ -338,6 +338,10 @@ button {
   border: 1px solid var(--oxitec-error)
 }
 
+#attributeList .TextBox:first-child {
+  margin-bottom: 24px;
+}
+
 .panel-default .entry .entry-item,
 .panel-default .attrEntry {
   display: flex;
