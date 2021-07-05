@@ -317,7 +317,7 @@ button {
   margin-top: 0;
 }
 
-.panel-default .panel-body .attrEntry > div {
+.panel-default .panel-body .attrEntry > div:first-child {
   margin-bottom: 24px;
 }
 
@@ -336,10 +336,6 @@ button {
 #attributeList ul li .attrEntry.validate input.invalid,
 #attributeList ul li .attrEntry.validate input:invalid {
   border: 1px solid var(--oxitec-error)
-}
-
-#attributeList .TextBox .buttons.verify {
-  margin-bottom: 24px;
 }
 
 .panel-default .entry .entry-item,
