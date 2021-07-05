@@ -24,6 +24,7 @@ if(emailVerificationInput) {
 
     hideEmailLabel('#email_ver_but_send');
     hideEmailLabel('#email_ver_but_resend');
+    hideEmailLabel('#email_ver_but_verify');
 
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
     const observer = new MutationObserver(() => {
