@@ -16,7 +16,7 @@ inputs.forEach(input => validateInput(input));
 function validateInput(input) {
     const observer = new MutationObserver(function() {
         const parent = input.parentElement;
-        if(input.classList.contains("invalid")) {
+        if(input.classList.contains("invalid") || input.classList.contains("highlightError")) {
             parent.classList.add("invalid")
         } else {
             parent.classList.remove("invalid")
