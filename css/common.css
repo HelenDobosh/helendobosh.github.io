@@ -313,6 +313,14 @@ button {
   margin-top: 8px;
 }
 
+.panel-default .panel-body .attrEntry:first-child {
+  margin-top: 0;
+}
+
+.panel-default .panel-body .attrEntry > div {
+  margin-bottom: 24px;
+}
+
 .panel-default .panel-body .verificationInfoText {
   font-size: 14px;
   line-height: 18px;
@@ -328,6 +336,10 @@ button {
 #attributeList ul li .attrEntry.validate input.invalid,
 #attributeList ul li .attrEntry.validate input:invalid {
   border: 1px solid var(--oxitec-error)
+}
+
+#attributeList .TextBox .buttons.verify {
+  margin-bottom: 24px;
 }
 
 .panel-default .entry .entry-item,
