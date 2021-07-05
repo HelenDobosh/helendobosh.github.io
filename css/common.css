@@ -67,6 +67,7 @@ a {
   font-size: 14px;
   color: var(--oxitec-dark);
   padding: 5px 0;
+  text-decoration: none;
 }
 
 a:hover {
