@@ -91,6 +91,10 @@ input, select {
   appearance: none;
 }
 
+input::placeholder, select::placeholder {
+  display: none;
+}
+
 select {
   position: relative;
   background-repeat: no-repeat;
@@ -103,13 +107,6 @@ select {
 
 select:focus, select:hover {
   background-image: url(https://helendobosh.github.io/oxitec-signin/images/chevron-focused.png);
-}
-
-input::placeholder,
-select::placeholder {
-  font-weight: normal;
-  overflow: visible;
-  color: var(--oxitec-disabled-light);
 }
 
 input:focus,
@@ -360,10 +357,7 @@ button {
 .panel-default .entry .entry-item label,
 .panel-default .attrEntry label,
 .panel-default .entry .entry-item .password-label > label {
-  opacity: 0;
   color: var(--oxitec-primary);
-  background-color: #fff;
-  transition: all 0.2s linear;
   font-size: 14px;
   margin-bottom: 4px;
   line-height: 18px;
@@ -380,12 +374,6 @@ button {
   opacity: 1;
   z-index: 1;
   top: 0;
-}
-
-.panel-default .entry .entry-item.filled > label,
-.panel-default .attrEntry.filled > label,
-.panel-default .entry .entry-item.filled .password-label > label {
-  opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,17 +1,17 @@
 const inputs = document.querySelectorAll('input');
 
-inputs.forEach(input => input.addEventListener('input', updateFilledStatus))
-
-function updateFilledStatus(event) {
-    validateInput(event.target);
-
-    const parent = event.target.parentElement;
-
-    parent.classList.add('filled');
-    if(event.target.value === '') {
-        parent.classList.remove('filled');
-    }
-}
+inputs.forEach(input => validateInput(input));
+//
+// function updateFilledStatus(event) {
+//     validateInput(event.target);
+//
+//     const parent = event.target.parentElement;
+//
+//     parent.classList.add('filled');
+//     if(event.target.value === '') {
+//         parent.classList.remove('filled');
+//     }
+// }
 
 function validateInput(input) {
     const observer = new MutationObserver(function() {
