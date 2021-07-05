@@ -1,10 +1,9 @@
-document.activeElement.blur();
-
 const inputs = document.querySelectorAll('input');
 
 inputs.forEach(input => validateInput(input));
 
 function validateInput(input) {
+    input.blur();
     const observer = new MutationObserver(function() {
         const parent = input.parentElement;
         if(input.classList.contains("invalid") || input.classList.contains("highlightError")) {
