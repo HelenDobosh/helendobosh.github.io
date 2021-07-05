@@ -22,9 +22,6 @@ const emailLabel = document.querySelector('#email_label');
 
 if(emailVerificationInput) {
 
-    hideEmailLabel('#email_ver_but_resend');
-    hideEmailLabel('#email_ver_but_verify');
-
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
     const observer = new MutationObserver(() => {
         if(emailVerificationInput.style.display === "inline") {
@@ -39,11 +36,11 @@ if(emailVerificationInput) {
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
 }
 
-function hideEmailLabel(btnId) {
-    document.querySelector(btnId).addEventListener('click', () => {
-        emailLabel.style.display = 'none';
-    })
-}
+// function hideEmailLabel(btnId) {
+//     document.querySelector(btnId).addEventListener('click', () => {
+//         emailLabel.style.display = 'none';
+//     })
+// }
 
 const emailInput = document.querySelector('#email');
 
