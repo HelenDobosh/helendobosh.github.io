@@ -16,14 +16,14 @@
   display: none
 }
 
-.unified_container .panel-default #api .localAccount {
+.unified_container .panel-default .localAccount {
   position: relative;
   width: 100%
 }
 
-.unified_container .panel-default #api .localAccount .entry .entry-item {
+.unified_container .panel-default .entry-item {
   position: relative;
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .forgot-password > a {
@@ -35,7 +35,7 @@
   display: none
 }
 
-.unified_container .panel-default #api .localAccount .create p {
+.unified_container .panel-default .localAccount .create p {
   margin-top: 24px;
   text-align: center;
   color: rgba(54, 90, 114, 0.5);
@@ -52,15 +52,12 @@
   display: none;
 }
 
-.password-label {
-  order: 3;
+.unified_container .panel-default .working ~ .buttons {
+  margin-top: 30px;
 }
 
-.password-label label {
+.password-label #forgotPassword {
   position: absolute;
-  top: -20px;
-}
-
-@media only screen and (min-width: 768px) {
-
+  bottom: -30px;
+  left: 0;
 }
