@@ -23,7 +23,7 @@ if(continueBtn) {
     continueBtn.addEventListener('click', () => {
         if(requiredFieldMissing && requiredFieldMissing.style.display === "block") {
             document.querySelectorAll(".itemLevel").forEach(item => {
-                if(item.classList.contains('.show')) {
+                if(item.classList.contains('show')) {
                     item.parentElement.classList.add('invalid');
                 } else {
                     item.parentElement.classList.remove('invalid');
