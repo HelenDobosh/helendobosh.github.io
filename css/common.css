@@ -339,7 +339,7 @@ button {
 
 #attributeList ul li .attrEntry.validate input.invalid,
 #attributeList ul li .attrEntry.validate input:invalid,
-.buttons.verify.invalid input.invalid {
+.buttons.verify.invalid input {
   border: 1px solid var(--oxitec-error);
 }
 
