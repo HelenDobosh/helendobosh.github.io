@@ -4,15 +4,15 @@
   display: none
 }
 
-.unified_container .panel-default #api .intro h2 {
+.unified_container .panel-default .intro h2 {
   font-size: 32px;
   margin: 32px 0 24px;
   line-height: 41px;
   font-weight: normal;
-  color: var(--oxitec-dark);
+  color: var(--oxitec-primary);
 }
 
-.unified_container .panel-default #api .divider {
+.unified_container .panel-default .divider {
   display: none
 }
 
@@ -42,7 +42,7 @@
   font-size: 14px;
 }
 
-.unified_container .panel-default #api .localAccount .create #createAccount {
+.unified_container .panel-default .localAccount .create #createAccount {
   color: #365072;
   text-decoration: underline;
   margin-left: 10px;

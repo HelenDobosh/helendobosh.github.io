@@ -103,7 +103,7 @@ select {
   background-position-y: 50%;
   padding-right: 35px;
   background-image: url(https://helendobosh.github.io/oxitec-signin/images/chevron.png);
-  background-size: 11px;
+  background-size: 9px;
 }
 
 select:focus, select:hover {
