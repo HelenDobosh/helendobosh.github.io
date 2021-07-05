@@ -17,19 +17,21 @@ function validateInput(input) {
 }
 
 const requiredFieldMissing = document.querySelector('#requiredFieldMissing');
+const continueBtn = document.querySelector('#continue');
 
-document.querySelector('#continue').addEventListener('click', () => {
-    if(requiredFieldMissing && requiredFieldMissing.style.display === "inline") {
-        document.querySelectorAll(".itemLevel").forEach(item => {
-            if(item.classList.contains('.show')) {
-                item.parentElement.classList.add('invalid');
-            } else {
-                item.parentElement.classList.remove('invalid');
-            }
-        })
-    }
-});
-
+if(continueBtn) {
+    continueBtn.addEventListener('click', () => {
+        if(requiredFieldMissing && requiredFieldMissing.style.display === "block") {
+            document.querySelectorAll(".itemLevel").forEach(item => {
+                if(item.classList.contains('.show')) {
+                    item.parentElement.classList.add('invalid');
+                } else {
+                    item.parentElement.classList.remove('invalid');
+                }
+            })
+        }
+    });
+}
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
@@ -62,10 +64,14 @@ if(emailInput) {
     }).observe(emailInput, {attributes : true});
 }
 
-document.querySelector('#email_ver_but_verify').addEventListener('click', () => {
-    if(document.querySelector('#email_fail_retry').style.display === "inline") {
-        emailVerificationInput.classList.add("invalid")
-    } else {
-        emailVerificationInput.classList.remove("invalid")
-    }
-})
+const emailVarBtn = document.querySelector('#email_ver_but_verify');
+
+if(emailVarBtn) {
+    emailVarBtn.addEventListener('click', () => {
+        if(document.querySelector('#email_fail_retry').style.display === "inline") {
+            emailVerificationInput.classList.add("invalid")
+        } else {
+            emailVerificationInput.classList.remove("invalid")
+        }
+    })
+}
