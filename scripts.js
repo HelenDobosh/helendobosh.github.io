@@ -22,7 +22,6 @@ const emailLabel = document.querySelector('#email_label');
 
 if(emailVerificationInput) {
 
-    hideEmailLabel('#email_ver_but_send');
     hideEmailLabel('#email_ver_but_resend');
     hideEmailLabel('#email_ver_but_verify');
 
@@ -30,8 +29,10 @@ if(emailVerificationInput) {
     const observer = new MutationObserver(() => {
         if(emailVerificationInput.style.display === "inline") {
             emailInput.style.display = 'none';
+            emailLabel.style.display = 'none';
         } else {
             emailInput.style.display = 'block';
+            emailLabel.style.display = 'block';
         }
     });
 
