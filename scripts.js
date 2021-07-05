@@ -27,7 +27,7 @@ if(emailVerificationInput) {
 
     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
     const observer = new MutationObserver(() => {
-        if(emailVerificationInput.style.display === "inline") {
+        if(emailVerificationInput.style.display === "none") {
             emailInput.style.display = 'none';
         } else {
             emailInput.style.display = 'block';
