@@ -53,11 +53,21 @@
 }
 
 .unified_container .panel-default .working ~ .buttons {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .password-label #forgotPassword {
   position: absolute;
-  bottom: -30px;
+  bottom: -42px;
   left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .password-label #forgotPassword {
+    bottom: -30px;
+  }
+
+  .unified_container .panel-default .working ~ .buttons {
+    margin-top: 30px;
+  }
 }

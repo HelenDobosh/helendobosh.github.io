@@ -340,6 +340,10 @@ button {
   margin-bottom: 24px;
 }
 
+#attributeList ul li:last-child {
+  margin-bottom: 0;
+}
+
 .panel-default .entry .entry-item,
 .panel-default .attrEntry {
   display: flex;
