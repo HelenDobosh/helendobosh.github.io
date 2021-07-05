@@ -332,12 +332,14 @@ button {
 }
 
 #attributeList ul li .attrEntry.validate input.invalid,
-#attributeList ul li .attrEntry.validate input:invalid {
+#attributeList ul li .attrEntry.validate input:invalid,
+.buttons.verify.invalid input.invalid {
   border: 1px solid var(--oxitec-error);
 }
 
 #attributeList ul li .attrEntry.validate input.invalid:focus,
-#attributeList ul li .attrEntry.validate input:invalid:focus {
+#attributeList ul li .attrEntry.validate input:invalid:focus,
+.buttons.verify.invalid input.invalid:focus {
   border-width: 2px;
 }
 
@@ -362,7 +364,8 @@ button {
 }
 
 .panel-default .entry .entry-item.invalid label,
-.panel-default .attrEntry.invalid label {
+.panel-default .attrEntry.invalid label,
+.buttons.verify.invalid label {
   color: var(--oxitec-error);
 }
 

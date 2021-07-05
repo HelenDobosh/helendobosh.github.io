@@ -9,3 +9,7 @@
 .self_asserted_container .panel-default .attrEntry div.filled #email_ver_input_label {
   opacity: 1;
 }
+
+#requiredFieldMissing, #passwordEntryMismatch {
+  margin-bottom: 20px;
+}
