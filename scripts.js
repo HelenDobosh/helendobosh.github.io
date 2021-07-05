@@ -72,9 +72,9 @@ const emailFailRetry = document.querySelector('#email_fail_retry');
 if(emailFailRetry) {
     new MutationObserver(() => {
         if(emailFailRetry.style.display === "inline") {
-            emailVerificationInput.classList.add("invalid")
+            emailVerificationInput.parentElement.classList.add("invalid")
         } else {
-            emailVerificationInput.classList.remove("invalid")
+            emailVerificationInput.parentElement.classList.remove("invalid")
         }
     }).observe(emailFailRetry, {attributes : true});
 }
