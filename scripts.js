@@ -16,6 +16,20 @@ function validateInput(input) {
     observer.observe(input, {attributes : true, attributeFilter : ['class']});
 }
 
+const requiredFieldMissing = document.querySelector('#requiredFieldMissing');
+
+document.querySelector('#continue').addEventListener('click', () => {
+    if(requiredFieldMissing && requiredFieldMissing.style.display === "inline") {
+        document.querySelectorAll(".itemLevel").forEach(item => {
+            if(item.classList.contains('.show')) {
+                item.parentElement.classList.add('invalid');
+            } else {
+                item.parentElement.classList.remove('invalid');
+            }
+        })
+    }
+});
+
 
 const emailVerificationInput = document.querySelector('#email_ver_input');
 const emailLabel = document.querySelector('#email_label');
@@ -34,22 +48,6 @@ if(emailVerificationInput) {
 
     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
 }
-// const requiredFieldMissing = document.querySelector('#requiredFieldMissing');
-//
-// if(requiredFieldMissing) {
-//     const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
-//     const observer = new MutationObserver(() => {
-//         if(emailVerificationInput.style.display === "inline") {
-//             emailInput.style.display = 'none';
-//             emailLabel.style.display = 'none';
-//         } else {
-//             emailInput.style.display = 'block';
-//             emailLabel.style.display = 'block';
-//         }
-//     });
-//
-//     observer.observe(emailVerificationInput, {attributes : true, attributeFilter : ['style']});
-// }
 
 const emailInput = document.querySelector('#email');
 
