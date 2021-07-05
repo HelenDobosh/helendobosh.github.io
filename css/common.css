@@ -333,7 +333,12 @@ button {
 
 #attributeList ul li .attrEntry.validate input.invalid,
 #attributeList ul li .attrEntry.validate input:invalid {
-  border: 1px solid var(--oxitec-error)
+  border: 1px solid var(--oxitec-error);
+}
+
+#attributeList ul li .attrEntry.validate input.invalid:focus,
+#attributeList ul li .attrEntry.validate input:invalid:focus {
+  border-width: 2px;
 }
 
 #attributeList ul li {
