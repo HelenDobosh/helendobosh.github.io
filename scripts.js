@@ -62,6 +62,7 @@ if(emailInput) {
             emailLabel.style.display = 'block';
             emailInput.parentElement.classList.add("disabled");
         } else {
+            emailLabel.style.display = 'none';
             emailInput.parentElement.classList.remove("disabled");
         }
     }).observe(emailInput, {attributes : true});
@@ -93,11 +94,12 @@ if(btnSendVerCode) {
 }
 
 const btnVerify = document.querySelector('.verifyCode');
+const emailVerificationSSPRControl= document.querySelector('#emailVerificationSSPRControl_error_message');
 const verificationCodeItemLevel = document.querySelector('.TextBox.VerificationCode .error.itemLevel');
 
 if(btnVerify) {
     btnVerify.addEventListener('click', () => {
-        if(verificationCodeItemLevel.classList.contains('show')) {
+        if(verificationCodeItemLevel.classList.contains('show') || emailVerificationSSPRControl.style.display === "inline") {
             verificationCodeItemLevel.parentElement.querySelector('input').classList.add('invalid')
         } else {
             verificationCodeItemLevel.parentElement.querySelector('input').classList.remove('invalid')
