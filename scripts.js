@@ -36,7 +36,7 @@ if(requiredFieldMissing) {
     }).observe(requiredFieldMissing, {attributes : true});
 }
 
-const emailVerificationInput = document.querySelector('.verificationCode');
+const emailVerificationInput = document.querySelector('.VerificationCode');
 const emailLabel = document.querySelector('#email_label');
 
 if(emailVerificationInput) {
