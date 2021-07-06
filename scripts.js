@@ -62,7 +62,6 @@ if(emailInput) {
             emailLabel.style.display = 'block';
             emailInput.parentElement.classList.add("disabled");
         } else {
-            emailLabel.style.display = 'none';
             emailInput.parentElement.classList.remove("disabled");
         }
     }).observe(emailInput, {attributes : true});
