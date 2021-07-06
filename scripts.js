@@ -117,5 +117,5 @@ if(emailVerificationSSPRControl) {
         } else {
             verificationCodeInput.classList.remove("invalid")
         }
-    }).observe(emailFailRetry, {attributes : true});
+    }).observe(emailVerificationSSPRControl, {attributes : true});
 }
