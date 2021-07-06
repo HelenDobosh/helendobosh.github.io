@@ -326,6 +326,7 @@ button {
 }
 
 .panel-default .panel-body .verificationSuccessText,
+.panel-default .panel-body .verificationErrorText,
 .panel-default .panel-body .verificationInfoText {
   font-size: 14px;
   line-height: 18px;
@@ -333,7 +334,8 @@ button {
 }
 
 .panel-default .panel-body .verificationSuccessText > div,
-.panel-default .panel-body .verificationInfoText > div {
+.panel-default .panel-body .verificationInfoText > div,
+.panel-default .panel-body .verificationErrorText > div {
   margin-bottom: 20px;
 }
 

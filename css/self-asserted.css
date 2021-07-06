@@ -10,6 +10,7 @@
   opacity: 1;
 }
 
-#requiredFieldMissing, #passwordEntryMismatch {
+#requiredFieldMissing, #passwordEntryMismatch,
+#fieldIncorrect {
   margin-bottom: 20px;
 }
