@@ -337,14 +337,16 @@ button {
   color: var(--oxitec-dark);
 }
 
-#attributeList ul li .attrEntry.validate input.invalid,
-#attributeList ul li .attrEntry.validate input:invalid,
+.attrEntry.validate input.invalid,
+ul li .attrEntry.validate input:invalid,
+.attrEntry.invalid input,
 .buttons.verify.invalid input {
   border: 1px solid var(--oxitec-error);
 }
 
-#attributeList ul li .attrEntry.validate input.invalid:focus,
-#attributeList ul li .attrEntry.validate input:invalid:focus,
+.attrEntry.validate input.invalid:focus,
+.attrEntry.validate input:invalid:focus,
+.attrEntry.invalid input:focus,
 .buttons.verify.invalid input.invalid:focus {
   border-width: 2px;
 }
