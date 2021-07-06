@@ -182,8 +182,6 @@ button {
 .buttons button {
   height: 48px;
   width: 100%;
-  left: 0;
-  top: 186px;
   border-radius: 6px;
   background-color: var(--oxitec-primary);
   color: var(--oxitec-white);
@@ -213,7 +211,8 @@ button {
 }
 
 .buttons #cancel, .buttons #email_ver_but_resend,
-.buttons #email_ver_but_edit, .buttons .sendNewCode {
+.buttons #email_ver_but_edit, .buttons .sendNewCode,
+.buttons .changeClaims {
   font-size: 14px;
   line-height: 18px;
   padding: 0;
@@ -226,9 +225,11 @@ button {
 }
 
 .buttons #cancel:hover, .buttons #email_ver_but_resend:hover,
-.buttons #email_ver_but_edit:hover, .buttons .sendNewCode:hover {
+.buttons #email_ver_but_edit:hover, .buttons .sendNewCode:hover,
+.buttons .changeClaims:hover {
   text-decoration: underline;
   color: var(--oxitec-secondary);
+  background-color: transparent;
 }
 
 #email_ver_input {

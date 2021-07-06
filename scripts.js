@@ -79,14 +79,28 @@ if(emailFailRetry) {
     }).observe(emailFailRetry, {attributes : true});
 }
 
-const btnSendVerCode = document.querySelector('#emailVerificationSSPRControl_but_send_code');
-const itemLevel = document.querySelector('.TextBox.email .error.itemLevel');
+const btnSendVerCode = document.querySelector('.sendCode');
+const emailItemLevel = document.querySelector('.TextBox.email .error.itemLevel');
+
 if(btnSendVerCode) {
     btnSendVerCode.addEventListener('click', () => {
-        if(itemLevel.classList.contains('show')) {
-            itemLevel.parentElement.querySelector('input').classList.add('invalid')
+        if(emailItemLevel.classList.contains('show')) {
+            emailItemLevel.parentElement.querySelector('input').classList.add('invalid')
         } else {
-            itemLevel.parentElement.querySelector('input').classList.remove('invalid')
+            emailItemLevel.parentElement.querySelector('input').classList.remove('invalid')
+        }
+    })
+}
+
+const btnVerify = document.querySelector('.verifyCode');
+const verificationCodeItemLevel = document.querySelector('.TextBox.VerificationCode .error.itemLevel');
+
+if(btnVerify) {
+    btnVerify.addEventListener('click', () => {
+        if(verificationCodeItemLevel.classList.contains('show')) {
+            verificationCodeItemLevel.parentElement.querySelector('input').classList.add('invalid')
+        } else {
+            verificationCodeItemLevel.parentElement.querySelector('input').classList.remove('invalid')
         }
     })
 }

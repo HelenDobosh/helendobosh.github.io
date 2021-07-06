@@ -16,7 +16,12 @@
 
 .self_asserted_container  .buttons .sendNewCode {
   position: absolute;
-  top: -16px;
+  bottom: 78px;
+  left: 0;
+}
+
+.verificationControlContent {
+  position: relative;
 }
 
 #requiredFieldMissing, #passwordEntryMismatch,
