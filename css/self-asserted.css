@@ -14,9 +14,13 @@
   margin: 20px 0 30px;
 }
 
+.self_asserted_container .TextBox.email[aria-hidden="false"] .attrEntry {
+  margin: 20px 0 12px;
+}
+
 .self_asserted_container .buttons .sendNewCode {
   position: absolute;
-  bottom: 78px;
+  bottom: 70px;
   left: 0;
 }
 
@@ -27,4 +31,10 @@
 #requiredFieldMissing, #passwordEntryMismatch,
 #fieldIncorrect {
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .self_asserted_container .buttons .sendNewCode {
+    bottom: 78px;
+  }
 }
