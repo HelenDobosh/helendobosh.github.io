@@ -36,11 +36,11 @@ if(requiredFieldMissing) {
     }).observe(requiredFieldMissing, {attributes : true});
 }
 
-const emailVerificationInput = document.querySelector('.VerificationCode input.textInput');
+const emailVerificationInput = document.querySelector('.verificationCode');
 const emailLabel = document.querySelector('#email_label');
 
 if(emailVerificationInput) {
-    const emailInput = emailVerificationInput.parentElement.parentElement.querySelector('#email')
+    const emailInput = emailVerificationInput.parentElement.querySelector('#email')
     const observer = new MutationObserver(() => {
         if(emailVerificationInput.style.display === "inline") {
             emailInput.style.display = 'none';
