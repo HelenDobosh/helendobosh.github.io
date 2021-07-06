@@ -10,6 +10,10 @@
   opacity: 1;
 }
 
+.self_asserted_container .TextBox.VerificationCode[display=inline] .attrEntry {
+  margin: 20px 0 24px;
+}
+
 #requiredFieldMissing, #passwordEntryMismatch,
 #fieldIncorrect {
   margin-bottom: 20px;
