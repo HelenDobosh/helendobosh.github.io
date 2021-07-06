@@ -10,7 +10,7 @@
   opacity: 1;
 }
 
-.self_asserted_container .VerificationCode[style*="display:inline;"] .attrEntry {
+.self_asserted_container .VerificationCode[aria-hidden="false"] .attrEntry {
   margin: 20px 0 24px;
 }
 
