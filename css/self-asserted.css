@@ -11,7 +11,11 @@
 }
 
 .self_asserted_container .VerificationCode[aria-hidden="false"] .attrEntry {
-  margin: 20px 0 30px;
+  margin: 20px 0 12px;
+}
+
+.self_asserted_container .email .attrEntry.disabled {
+  margin: 20px 0 12px;
 }
 
 .self_asserted_container .buttons .sendNewCode {

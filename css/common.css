@@ -226,7 +226,10 @@ button {
 
 .buttons #cancel:hover, .buttons #email_ver_but_resend:hover,
 .buttons #email_ver_but_edit:hover, .buttons .sendNewCode:hover,
-.buttons .changeClaims:hover {
+.buttons .changeClaims:hover,
+.buttons #cancel:hover, .buttons #email_ver_but_resend:focus,
+.buttons #email_ver_but_edit:focus, .buttons .sendNewCode:focus,
+.buttons .changeClaims:focus {
   text-decoration: underline;
   color: var(--oxitec-secondary);
   background-color: transparent;
