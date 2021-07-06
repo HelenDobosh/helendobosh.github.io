@@ -112,6 +112,7 @@ const verificationCodeInput =  document.querySelector('#verificationCode');
 if(emailVerificationSSPRControl) {
     new MutationObserver(() => {
         if(emailVerificationSSPRControl.style.display === "inline") {
+            emailLabel.style.display = 'none';
             verificationCodeInput.classList.add("invalid")
         } else {
             verificationCodeInput.classList.remove("invalid")

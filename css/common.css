@@ -333,7 +333,6 @@ button {
 }
 
 .panel-default .panel-body .verificationSuccessText,
-.panel-default .panel-body .verificationErrorText,
 .panel-default .panel-body .verificationInfoText {
   font-size: 14px;
   line-height: 18px;
