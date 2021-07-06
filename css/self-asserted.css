@@ -11,7 +11,16 @@
 }
 
 .self_asserted_container .VerificationCode[aria-hidden="false"] .attrEntry {
-  margin: 20px 0 24px;
+  margin: 20px 0 30px;
+}
+
+.buttons {
+  position: relative;
+}
+
+.buttons .sendNewCode {
+  position: absolute;
+  top: -16px;
 }
 
 #requiredFieldMissing, #passwordEntryMismatch,

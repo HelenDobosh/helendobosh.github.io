@@ -213,7 +213,7 @@ button {
 }
 
 .buttons #cancel, .buttons #email_ver_but_resend,
-.buttons #email_ver_but_edit, .buttons #emailVerificationSSPRControl_but_send_new_code {
+.buttons #email_ver_but_edit, .buttons .sendNewCode {
   font-size: 14px;
   line-height: 18px;
   padding: 0;
@@ -223,6 +223,12 @@ button {
   margin: 0;
   border: none;
   color: var(--oxitec-primary);
+}
+
+.buttons #cancel:hover, .buttons #email_ver_but_resend:hover,
+.buttons #email_ver_but_edit:hover, .buttons .sendNewCode:hover {
+  text-decoration: underline;
+  color: var(--oxitec-secondary);
 }
 
 #email_ver_input {
