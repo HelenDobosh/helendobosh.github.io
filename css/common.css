@@ -325,16 +325,12 @@ button {
   margin-bottom: 24px;
 }
 
+.panel-default .panel-body .verificationSuccessText,
 .panel-default .panel-body .verificationInfoText {
   font-size: 14px;
   line-height: 18px;
   color: var(--oxitec-dark);
-}
-
-.panel-default .panel-body .verificationSuccessText {
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--oxitec-dark);
+  margin-bottom: 20px;
 }
 
 .attrEntry.validate input.invalid,
