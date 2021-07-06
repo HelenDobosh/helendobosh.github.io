@@ -80,7 +80,7 @@ if(emailFailRetry) {
 }
 
 const btnSendVerCode = document.querySelector('#emailVerificationSSPRControl_but_send_code');
-const itemLevel = document.querySelector('.error.itemLevel');
+const itemLevel = document.querySelector('.TextBox.email .error.itemLevel');
 if(btnSendVerCode) {
     btnSendVerCode.addEventListener('click', () => {
         if(itemLevel.classList.contains('show')) {
