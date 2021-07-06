@@ -94,7 +94,6 @@ if(btnSendVerCode) {
 }
 
 const btnVerify = document.querySelector('.verifyCode');
-const emailVerificationSSPRControl= document.querySelector('#emailVerificationSSPRControl_error_message');
 const verificationCodeItemLevel = document.querySelector('.TextBox.VerificationCode .error.itemLevel');
 
 if(btnVerify) {
@@ -105,4 +104,18 @@ if(btnVerify) {
             verificationCodeItemLevel.parentElement.querySelector('input').classList.remove('invalid')
         }
     })
+}
+
+const emailVerificationSSPRControl= document.querySelector('#emailVerificationSSPRControl_error_message');
+const verificationCodeInput =  document.querySelector('#verificationCode');
+
+
+if(emailVerificationSSPRControl) {
+    new MutationObserver(() => {
+        if(emailVerificationSSPRControl.style.display === "inline") {
+            verificationCodeInput.classList.add("invalid")
+        } else {
+            verificationCodeInput.classList.remove("invalid")
+        }
+    }).observe(emailFailRetry, {attributes : true});
 }
