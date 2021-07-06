@@ -78,3 +78,15 @@ if(emailFailRetry) {
         }
     }).observe(emailFailRetry, {attributes : true});
 }
+
+const btnSendVerCode = document.querySelector('#emailVerificationSSPRControl_but_send_code');
+const itemLevel = document.querySelector('.error.itemLevel');
+if(btnSendVerCode) {
+    btnSendVerCode.addEventListener('click', () => {
+        if(itemLevel.classList.contains('show')) {
+            itemLevel.parentElement.querySelector('input').classList.add('invalid')
+        } else {
+            itemLevel.parentElement.querySelector('input').classList.remove('invalid')
+        }
+    })
+}

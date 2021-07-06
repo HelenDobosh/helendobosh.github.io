@@ -213,7 +213,7 @@ button {
 }
 
 .buttons #cancel, .buttons #email_ver_but_resend,
-.buttons #email_ver_but_edit {
+.buttons #email_ver_but_edit, .buttons #emailVerificationSSPRControl_but_send_new_code {
   font-size: 14px;
   line-height: 18px;
   padding: 0;
