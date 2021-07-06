@@ -330,6 +330,10 @@ button {
   font-size: 14px;
   line-height: 18px;
   color: var(--oxitec-dark);
+}
+
+.panel-default .panel-body .verificationSuccessText > div,
+.panel-default .panel-body .verificationInfoText > div {
   margin-bottom: 20px;
 }
 
