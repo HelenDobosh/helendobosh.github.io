@@ -366,6 +366,10 @@ ul li .attrEntry.validate input:invalid,
   margin-bottom: 24px;
 }
 
+#attributeList ul li.VerificationControl {
+  margin-bottom: 16px;
+}
+
 .panel-default .entry .entry-item,
 .panel-default .attrEntry {
   display: flex;
