@@ -58,7 +58,7 @@ const emailInput = document.querySelector('#email');
 
 if(emailInput) {
     new MutationObserver(() => {
-        if(emailInput.hasAttribute('disabled')) {
+        if(emailInput.hasAttribute('disabled') && emailInput.style.display !== 'none') {
             emailLabel.style.display = 'block';
             emailInput.parentElement.classList.add("disabled");
         } else {
@@ -118,4 +118,17 @@ if(emailVerificationSSPRControl) {
             verificationCodeInput.classList.remove("invalid")
         }
     }).observe(emailVerificationSSPRControl, {attributes : true});
+}
+
+const btnContinue = document.querySelector('#continue');
+const passwordItemLevel = document.querySelector('.Password .error.itemLevel');
+
+if(btnContinue) {
+    btnContinue.addEventListener('click', () => {
+        if(passwordItemLevel && passwordItemLevel.classList.contains('show')) {
+            passwordItemLevel.parentElement.querySelector('input').classList.add('invalid')
+        } else {
+            passwordItemLevel.parentElement.querySelector('input').classList.remove('invalid')
+        }
+    })
 }

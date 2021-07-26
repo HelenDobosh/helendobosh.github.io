@@ -11,10 +11,9 @@
 
 * {
   box-sizing: border-box;
-  font-size: 16px;
   letter-spacing: 0.004em;
   margin: 0;
-  font-family: 'FilsonSoftW03', sans-serif;
+  font-family: 'Montserrat', 'FilsonSoftW03', sans-serif;
   outline: none;
 }
 
@@ -179,6 +178,7 @@ button {
   cursor: pointer;
   outline: none;
   box-shadow: none;
+  font-size: 16px;
 }
 
 .buttons button {
