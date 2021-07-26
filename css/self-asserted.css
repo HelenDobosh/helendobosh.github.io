@@ -21,7 +21,7 @@
 .self_asserted_container .buttons .sendNewCode {
   position: absolute;
   bottom: 69px;
-  left: 0;
+  right: 0;
 }
 
 .verificationControlContent {
