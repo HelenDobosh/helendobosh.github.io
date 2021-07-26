@@ -26,6 +26,7 @@
   --oxitec-disabled-light: rgba(54, 80, 114, 0.5);
   --oxitec-primary: #365072;
   --oxitec-secondary: #A54F8B;
+  --oxitec-secondary-blue: #008CA7;
   --oxitec-white: #ffffff;
   --oxitec-error: #E72626;
   --oxitec-border: #D5D8E0;
@@ -72,7 +73,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: var(--oxitec-secondary);
+  color: var(--oxitec-secondary-blue);
 }
 
 a:focus {
@@ -98,8 +99,9 @@ input, select {
 }
 
 input::placeholder, select::placeholder {
-  opacity: 0;
-  color: transparent;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+  color: var(--oxitec-primary);
 }
 
 select {
@@ -133,7 +135,7 @@ select:hover {
 input:focus,
 select:focus {
   border-radius: 8px;
-  border: 2px solid var(--oxitec-primary);
+  border: 1px solid var(--oxitec-primary);
 }
 
 input:disabled,
